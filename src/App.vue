@@ -138,7 +138,11 @@ nightmode:false
     box-shadow: 0px 0px 3px #555;
     ;
 }
-}}
+}
+.logo-main{
+  filter: brightness(0);
+}
+}
 }
 
 ///night mode button
