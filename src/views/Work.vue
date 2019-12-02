@@ -324,9 +324,8 @@
     }
     .left,.right{
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       text-align: left;
-      border-left: #0ff 5px solid;
       
     }
   }
