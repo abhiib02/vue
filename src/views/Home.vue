@@ -20,7 +20,7 @@
                     </div>
 
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 center">
                     <img class="logo-main" src="../assets/logo.svg" alt="">
                 </div>
             </div>
