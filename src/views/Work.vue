@@ -326,7 +326,6 @@
       display: flex;
       justify-content: flex-start;
       text-align: left;
-      margin-left:49.6%;
       border-left: #0ff 5px solid;
       
     }
