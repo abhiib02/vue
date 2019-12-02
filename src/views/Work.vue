@@ -290,6 +290,7 @@
 
 </template>
 <style lang="scss" scoped>
+
   .timeline{
     
     .container{
@@ -313,6 +314,24 @@
       border-right: #0ff 5px solid;
     }
   }
+  @media only screen and (max-width: 860px) {
+  .timeline{
+    
+    .container{
+
+      width: 100%;
+     
+    }
+    .left,.right{
+      display: flex;
+      justify-content: flex-start;
+      text-align: left;
+      margin-left:49.6%;
+      border-left: #0ff 5px solid;
+      
+    }
+  }
+}
   *{
     color:#fff !important;
   }
