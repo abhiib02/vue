@@ -322,10 +322,19 @@
       width: 100%;
      
     }
-    .left,.right{
+    .left{
       display: flex;
       justify-content: center;
       text-align: left;
+      
+      
+      
+    }
+    .right{
+       display: flex;
+      justify-content: center;
+      text-align: left;
+      
       
     }
   }
