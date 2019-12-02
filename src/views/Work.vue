@@ -318,27 +318,22 @@
   .timeline{
     
     .container{
-
+      
       width: 100%;
      
     }
-    .left{
+    .left,.right{
       display: flex;
       justify-content: center;
-      text-align: left;
-      
-      
-      
+      align-items: center;
+      margin: 0;
+      border-left: #0ff 5px solid;
+      border-right: #0ff 0px solid;
+      flex-direction: column;
     }
-    .right{
-       display: flex;
-      justify-content: center;
-      text-align: left;
-      
-      
     }
   }
-}
+
   *{
     color:#fff !important;
   }
