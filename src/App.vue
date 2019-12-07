@@ -22,8 +22,9 @@
 </label>
     </div>
     <Navigation/>
+    <transition name="page" mode="out-in">
     <router-view class="animated fadeIn"/>
-    
+    </transition>
   </div>
 </template>
 
@@ -46,6 +47,18 @@ nightmode:false
   margin:0px;
   box-sizing: border-box;
   
+}
+
+.page-enter-active, .page-leave-active {
+  position:absolute;
+  width:100%;
+  height:100vh;
+  transform:translate(0%);
+  background:#111;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
 }
 #app {
   font-family: 'Montserrat', sans-serif;
