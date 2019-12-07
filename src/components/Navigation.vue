@@ -52,9 +52,11 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    z-index: 100;
+    z-index: 1000;
   }
 
+  
+  
   ul {
     display: block;
     justify-content: flex-end;

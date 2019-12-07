@@ -1,14 +1,14 @@
 <template>
 
-  <div id="app" v-bind:class="{nightmode:nightmode}">
+  <div id="app" @mousemove="cursorfollow($event)" v-bind:class="{nightmode:nightmode}">
   
-  
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-   
+   <div class="cursor" :style="{top : y+'px',left: x+'px',width: zIn+'px',height: zIn+'px',}"></div>
    <div id="nightmode">
       <label class="switch">
   <input v-model="nightmode" @click="nightmode = !nightmode" class="switch__input" type="checkbox">
@@ -21,29 +21,57 @@
   </span>
 </label>
     </div>
-    <Navigation/>
+    <Navigation  @mouseover="cursorfollownav()"/>
     <transition name="page" mode="out-in">
     <router-view  class="animated " transition="slideInUp" />
+    
     </transition>      
+    
   </div>
 </template>
 
 <script>
-
 import Navigation from '@/components/Navigation.vue'
+
 export default {
   components:{
     Navigation
   },
+  methods:{
+      cursorfollow(event){
+        this.x=event.clientX;
+        this.y=event.clientY;
+      },
+      cursorfollownav(){
+        return this.zIn=0;
+      }
+  },
   data(){
     return{
-nightmode:false
+nightmode:false,
+x:'',
+y:'',
+zIn:''
     }
     
   }
 }
 </script>
 <style lang="scss">
+.cursor{
+  border:#0ff 1px solid;
+  width:40px;
+  height:40px;
+  margin:10px;
+  position: fixed;
+  z-index:10000;
+  transform: translate(-50%,-50%);
+  border-radius:50%;
+  transition:.3s all ease;
+  pointer-events: none;
+}
+
+
 .page-enter-active, .page-leave-active {
   transition: opacity 1s, transform 1s;
 }
