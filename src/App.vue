@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
    
    <div id="nightmode">
       <label class="switch">
@@ -23,12 +23,13 @@
     </div>
     <Navigation/>
     <transition name="page" mode="out-in">
-    <router-view class="animated fadeIn"/>
-    </transition>
+    <router-view  class="animated " transition="slideInUp" />
+    </transition>      
   </div>
 </template>
 
 <script>
+
 import Navigation from '@/components/Navigation.vue'
 export default {
   components:{
@@ -43,23 +44,20 @@ nightmode:false
 }
 </script>
 <style lang="scss">
+.page-enter-active, .page-leave-active {
+  transition: opacity 1s, transform 1s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+  transform: translateX(-30%);
+}
+
 *{
   margin:0px;
   box-sizing: border-box;
   
 }
 
-.page-enter-active, .page-leave-active {
-  position:absolute;
-  width:100%;
-  height:100vh;
-  transform:translate(0%);
-  background:#111;
-}
-.page-enter, .page-leave-to {
-  opacity: 0;
-  transform: translateX(-100%);
-}
 #app {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
