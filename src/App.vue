@@ -21,7 +21,7 @@
   </span>
 </label>
     </div>
-    <Navigation  @mouseover="cursorfollownav()"/>
+    <Navigation/>
     <transition name="page" mode="out-in">
     <router-view  class="animated " transition="slideInUp" />
     
@@ -42,9 +42,6 @@ export default {
         this.x=event.clientX;
         this.y=event.clientY;
       },
-      cursorfollownav(){
-        return this.zIn=0;
-      }
   },
   data(){
     return{
