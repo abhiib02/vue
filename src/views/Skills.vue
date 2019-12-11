@@ -1,6 +1,6 @@
 <template>
-    <div class="fullvh center">
-        <div class="container">
+    <div class="fullvh center" @mousemove="mouseinvert($event)">
+        <div class="container" >
             <div class="row">
                 <div class="col-md-12 text-left center-ver text-dark-cyan">
                     &emsp;&lt;body&gt;
@@ -47,10 +47,10 @@
             </div>
         </div>
         
-        <div class="container">
+        <div class="container" >
             <hr width="100%" height="2px">
-<div class="page" @mousemove="mouseinvert($event)">
-    <div v-for="(skill,index) in skills" v-bind:key="index" class="box box-shadow">
+<div class="page" v-bind:style="invertranslate">
+    <div v-for="(skill,index) in skills" v-bind:key="index"  class="box box-shadow"  >
         <img :src="skill.techlogo" width="50px" height="50px"  alt="">
         <p style="font-size:.7em" >{{skill.tech}}</p>
     </div>
@@ -145,13 +145,18 @@ export default {
     methods:{
         mouseinvert(event){
         
-            var x,y;
-            x = event.clientX-(window.innerWidth * 0.5);
-            y = event.clientY-(window.innerHeight * 0.5);
-            x = x * 0.2;
-            y = y * 0.2;
-            this.x = x;
-            this.y = y;
+            var x3d,y3d;
+            x3d = event.clientX-(window.innerWidth * 0.5);
+            y3d = event.clientY-(window.innerHeight * 0.5);
+            x3d = x3d * 0.2;
+            y3d = y3d * 0.2;
+            this.x = x3d;
+            this.y = y3d;
+        }
+    },
+    computed:{
+        invertranslate(){
+            return 'transform:translate('+-this.x+'px,'+-this.y+'px);';
         }
     }
 }
@@ -164,6 +169,7 @@ export default {
   flex-wrap: wrap;
   transform-origin:preserve-3d;
   perspective:500px;
+
 }
 .box{
   transition:width .5s ease,height .5s ease;
@@ -177,7 +183,7 @@ export default {
   width:100px;
   height:100px;
   background:#222;
-  transition: all .5s ease;
+  transition: all .2s ease;
   &:hover{
      transform:scale(1.2);
 
@@ -187,7 +193,7 @@ export default {
   width:100px;
   height:100px;
   background:#222;
-  transition: all .5s ease;
+  transition: all .2s ease;
   &:hover{
      transform:scale(1.2);
   }

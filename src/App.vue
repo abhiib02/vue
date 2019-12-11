@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-   <div class="cursor" :style="{top : y+'px',left: x+'px',width: zIn+'px',height: zIn+'px',}"></div>
+   
    <div id="nightmode">
       <label class="switch">
   <input v-model="nightmode" @click="nightmode = !nightmode" class="switch__input" type="checkbox">
@@ -38,11 +38,9 @@ export default {
     Navigation
   },
   methods:{
-      cursorfollow(event){
-        this.x=event.clientX;
-        this.y=event.clientY;
-      },
+      
   },
+  computed:{},
   data(){
     return{
 nightmode:false,
@@ -55,18 +53,7 @@ zIn:''
 }
 </script>
 <style lang="scss">
-.cursor{
-  border:#0ff 1px solid;
-  width:40px;
-  height:40px;
-  margin:10px;
-  position: fixed;
-  z-index:10000;
-  transform: translate(-50%,-50%);
-  border-radius:50%;
-  transition:.3s all ease;
-  pointer-events: none;
-}
+
 
 
 .page-enter-active, .page-leave-active {
