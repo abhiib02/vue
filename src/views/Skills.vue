@@ -2,7 +2,7 @@
     <div class="fullvh center">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-left center-ver text-dark-cyan">
+                <div class="col-md-12 text-left center-ver text-dark-cyan">
                     &emsp;&lt;body&gt;
                     <div class="">
                         &lt;h1&gt;
@@ -21,24 +21,8 @@
                     &emsp; &lt;&#47;body&gt;
 
                 </div>
-                <div class="col-md-6 text-left">
 
-                    <div class="container text-light">
-                        <p>HTML</p>
-                        <div class="skills slideInLeft animated html">90%</div>
-                        <p>CSS</p>
-                        <div class="skills slideInLeft animated css">80%</div>
-                        <p>JavaScript</p>
-                        <div class="skills slideInLeft animated js">65%</div>
-                        <p>Vue</p>
-                        <div class="skills slideInLeft animated Vue">65%</div>
-                        <p>PHP</p>
-                        <div class="skills slideInLeft animated php">60%</div>
-                        <p>Codeigniter</p>
-                        <div class="skills slideInLeft animated ci">60%</div>
-                        <p>Laravel</p>
-                        <div class="skills slideInLeft animated lara">60%</div>
-                    </div><!-- end of /.coloumn -->
+<!-- end of /.coloumn -->
 
                     <!--<div id="tagcloud">
                         <ul>
@@ -59,13 +43,155 @@
                             <li><img class="icons-2 box-shadow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/220px-Laravel.svg.png" alt=""></li>
                         </ul>
                     </div>-->
-                </div>
+                
             </div>
         </div>
+        
+        <div class="container">
+            <hr width="100%" height="2px">
+<div class="page" @mousemove="mouseinvert($event)">
+    <div v-for="(skill,index) in skills" v-bind:key="index" class="box box-shadow">
+        <img :src="skill.techlogo" width="50px" height="50px"  alt="">
+        <p style="font-size:.7em" >{{skill.tech}}</p>
+    </div>
+    
+  </div>
+  </div>
     </div>
 </template>
-
+<script>
+export default {
+    data(){
+        return {
+            skills:[
+                {   
+                    techlogo:'https://img.icons8.com/color/2x/c-programming.png',
+                    tech:'C',
+                },
+                {   
+                    techlogo:'https://img.icons8.com/color/2x/c-plus-plus-logo.png',
+                    tech:'C++',
+                },
+                {   
+                    techlogo:'https://img.icons8.com/color/2x/c-sharp-logo-2.png',
+                    tech:'C#',
+                },
+                {   
+                    techlogo:'https://img.icons8.com/color/2x/java-coffee-cup-logo.png',
+                    tech:'Java',
+                },
+                {   
+                    techlogo:'https://img.icons8.com/color/2x/html-5.png',
+                    tech:'HTML',
+                },
+                {   
+                    techlogo:'https://img.icons8.com/color/2x/css3.png',
+                    tech:'CSS3',
+                },
+                {   
+                    techlogo:'https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1150px-MySQL.svg.png',
+                    tech:'MySQL',
+                },
+                {   
+                    techlogo:'https://www.prchecker.info/free-icons/128x128/php_128_px.png',
+                    tech:'PHP',
+                },
+                {   
+                    techlogo:'https://img.icons8.com/color/2x/javascript.png',
+                    tech:'Javascript',
+                },
+                {   
+                    techlogo:'https://cdn.iconscout.com/icon/free/png-256/jquery-10-1175155.png',
+                    tech:'Jquery',
+                },
+                {   
+                    techlogo:'https://cdn1.iconfinder.com/data/icons/logos-3/304/codeigniter-icon-512.png',
+                    tech:'CodeIgniter',
+                },
+                {   
+                    techlogo:'http://obscureproblemsandgotchas.com/wp-content/uploads/2018/06/bootstrap-stack-e1530246058846.png',
+                    tech:'Bootstrap',
+                },
+                {   
+                    techlogo:'https://formvalidation.io/branches/bulma.svg',
+                    tech:'Bulma',
+                },
+                {   
+                    techlogo:'https://www.consolebit.com/media/technologies/logo-materialize.png',
+                    tech:'Materialize CSS',
+                },
+                {   
+                    techlogo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/220px-Laravel.svg.png',
+                    tech:'Laravel',
+                },
+                {   
+                    techlogo:'https://www.stickpng.com/assets/images/58482acecef1014c0b5e4a1e.png',
+                    tech:'Vue JS',
+                },
+                {   
+                    techlogo:'https://cdn.freebiesupply.com/logos/large/2x/nativescript-logo-png-transparent.png',
+                    tech:'NativeScript',
+                },
+                {   
+                    techlogo:'https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png',
+                    tech:'Sass (SCSS)',
+                },
+                
+            ],
+            x:'',
+            y:''
+        }
+    },
+    methods:{
+        mouseinvert(event){
+        
+            var x,y;
+            x = event.clientX-(window.innerWidth * 0.5);
+            y = event.clientY-(window.innerHeight * 0.5);
+            x = x * 0.2;
+            y = y * 0.2;
+            this.x = x;
+            this.y = y;
+        }
+    }
+}
+</script>
 <style lang="scss" scoped>
+.page{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+  transform-origin:preserve-3d;
+  perspective:500px;
+}
+.box{
+  transition:width .5s ease,height .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:#0ff;
+}
+.box:nth-child(odd){
+  width:100px;
+  height:100px;
+  background:#222;
+  transition: all .5s ease;
+  &:hover{
+     transform:scale(1.2);
+
+  }
+}
+.box:nth-child(even){
+  width:100px;
+  height:100px;
+  background:#222;
+  transition: all .5s ease;
+  &:hover{
+     transform:scale(1.2);
+  }
+}
     .icons-2 {
         width: 70px;
         height: 70px;

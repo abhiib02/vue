@@ -178,7 +178,18 @@ zIn:''
 .logo-main{
   filter: brightness(0);
 }
+.box-shadow {
+    box-shadow: 0px 0px 3px #555;
+    ;
 }
+.page{
+.box{
+  background: #ddd;
+}
+}
+
+}
+
 }
 
 ///night mode button
