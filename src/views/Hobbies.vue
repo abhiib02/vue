@@ -3,19 +3,19 @@
     <div class="container">
             <div class="row ">
                 <div class="col-md-12  text-dark-cyan sticky">
-                    &emsp;&lt;body&gt;
+                   
                     <div class="">
-                        &lt;h1&gt;
+                       
                         <h1 class="title text-white text-shadow">Outside of Work</h1>
-                            &lt;&#47;h1&gt;
-                            <br> &lt;p&gt;<span class='text-white text-shadow'>
+                           
+                         <span class='text-white text-shadow'>
                             The things i like to do when its not related to any work,
                             Basically, this is my hobbies. There it is 
-                            </span>&lt;&#47;p&gt;
+                            </span>
                     </div>
                     <div class="center-hor text-white text-shadow">
 
-                    </div> &emsp; &lt;&#47;body&gt;
+                    </div>
                       <hr class="box-shadow">
 
                 </div>

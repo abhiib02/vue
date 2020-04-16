@@ -3,12 +3,12 @@
         <div class="container" >
             <div class="row">
                 <div class="col-md-12 text-left center-ver text-dark-cyan">
-                    &emsp;&lt;body&gt;
+                    
                     <div class="">
-                        &lt;h1&gt;
+                      
                         <h1 class="title text-white text-shadow">Skills &amp; Experience</h1>
-                        &lt;&#47;h1&gt;
-                        <br> &lt;p&gt; <br><span class='text-white text-shadow'>
+                        
+                     <span class='text-white text-shadow'>
                             These are the technologies i have worked with.
                             <br>
                             All these technologies consist of frontend technologies like (HTML,CSS,JAVASCRIPT)
@@ -16,9 +16,9 @@
                             I am familiar with some useful framework like FrontEnd Framework
                             (Bootstrap,Bulma,MaterializeCSS),
                             and BackEnd Framework (Codeigniter,Laravel).
-                        </span> <br>&lt;&#47;p&gt;
+                        </span>
                     </div>
-                    &emsp; &lt;&#47;body&gt;
+                    
 
                 </div>
 

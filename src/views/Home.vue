@@ -3,24 +3,24 @@
    <div class="container">
             <div class="row">
                 <div class="col-sm-6 text-left center-ver text-dark-cyan">
-                    &emsp;&lt;body&gt;
-                    <div class="">
-                        &lt;h1&gt;
-                        <span class="text-light text-shadow">
-                        <h2><b>Hi,</b></h2>
-                        <h2><b>I'm Abhishek Bhardwaj</b></h2>
-                        <h2><b>Web Developer</b></h2>
-                    </span> &lt;/h1&gt;
-                    </div>
-                    &emsp; &lt;/body&gt;
-                    <br>
-                    <br>
-                    <div class="center-hor">
+                   
+                    <div class="center">
+                         
+                        <span class="text-light text-shadow text-center">
+                        <h1><b>Hi,</b></h1>
+                        <h1><b>I'm Abhishek Bhardwaj</b></h1>
+                        <h1><b>Web Developer</b></h1>
+                        </span>
+                        <div class="center-hor m-auto">
                        <router-link to="/contact" class="btn text-white btn-sm waves-effect cyan">Contact Me</router-link><a class="btn btn-sm btn-outline-cyan waves-effect" href="https://drive.google.com/drive/folders/17laKbOfWJY7fSZ_SstE2cS2gNFF134cG">Resume</a>
                     </div>
+                    </div>
+               
+                   
+                    
 
                 </div>
-                <div class="col-sm-6 center">
+                <div class="col-sm-6 center hide-on-mobile">
                     <img class="logo-main" src="../assets/logo.svg" alt="">
                 </div>
             </div>

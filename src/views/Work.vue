@@ -3,18 +3,19 @@
   <div class="work fullvh ">
     <div class="container">
       <div class="row ">
-        <div class="col-md-4 offset-md-4 text-left center text-dark-cyan">
-          &emsp;&lt;body&gt;
+        
+        <div class="col-md-12 text-left  text-dark-cyan">
+          <h1 class="title text-white text-shadow">Work</h1>
           <div class="">
-            &lt;h1&gt;
-            <h1 class="title center text-white text-shadow">Work</h1>
-            &lt;&#47;h1&gt;
-            <br> &lt;p&gt; <br><span class='text-white  text-shadow'>
+            
+            
+         
+            <br> <span class='text-white  text-shadow'>
               These are some projects that i have made using the technologies i am familier with,
               the most common is HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP,  CODEIGNITER, LARAVEL
-            </span> <br>&lt;&#47;p&gt;
+            </span>
           </div>
-          &emsp; &lt;&#47;body&gt;
+
         </div>
       </div>
     </div>
