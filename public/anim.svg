@@ -5,7 +5,7 @@
     100% { transform: translate(0,1786.9647125199126px); }
   }
   .ld.ld-speed-dash {
-    animation: ld-speed-dash 2s linear infinite;
+    animation: ld-speed-dash 10s linear infinite;
   }
 </style>
   <g transform="translate(680,318)" style="animation-play-state: running; animation-delay: 0s;">
