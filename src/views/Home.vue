@@ -6,13 +6,14 @@
                    
                     <div class="center">
                          
-                        <span class="text-light text-shadow text-center">
+                        <span class="text-light ">
                         <h1><b>Hi,</b></h1>
                         <h1><b>I'm Abhishek Bhardwaj</b></h1>
                         <h1><b>Web Developer</b></h1>
                         </span>
                         <div class="center-hor m-auto">
-                       <router-link to="/contact" class="btn text-white btn-sm waves-effect cyan">Contact Me</router-link><a class="btn btn-sm btn-outline-cyan waves-effect" href="https://drive.google.com/drive/folders/17laKbOfWJY7fSZ_SstE2cS2gNFF134cG">Resume</a>
+                       <router-link to="/contact" class="btn text-white btn-sm waves-effect cyan">Contact Me</router-link>
+                       <router-link to="/work" class="btn btn-outline-cyan text-white btn-sm waves-effect cyan">Projects</router-link>
                     </div>
                     </div>
                

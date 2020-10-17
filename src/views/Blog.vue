@@ -1,7 +1,7 @@
 <template>
   <div class="Blog fullvh center">
    <div >
-     <div class="container text-light" >
+     <div class="container-fluid text-light" >
         <h2 class="text-light text-left">{{index}}</h2>
         
           <h1>{{posts.title}}</h1>

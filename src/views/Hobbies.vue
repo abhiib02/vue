@@ -6,17 +6,17 @@
                    
                     <div class="">
                        
-                        <h1 class="title text-white text-shadow">Outside of Work</h1>
+                        <h1 class="title text-white ">Outside of Work</h1>
                            
-                         <span class='text-white text-shadow'>
+                         <span class='text-white'>
                             The things i like to do when its not related to any work,
                             Basically, this is my hobbies. There it is 
                             </span>
                     </div>
-                    <div class="center-hor text-white text-shadow">
+                    <div class="center-hor text-white ">
 
                     </div>
-                      <hr class="box-shadow">
+                      <hr class="">
 
                 </div>
                 </div>
@@ -61,10 +61,10 @@
     width: 354px;
     background-color: #333 !important;
     color: #fff;
-    text-shadow: 0px 0px 10px #0ff !important;
+    //text-shadow: 0px 0px 10px #0ff !important;
     height: 354px;
     padding: 10px;
-    box-shadow: 0px 0px 10px #0ff !important;
+   // box-shadow: 0px 0px 10px #0ff !important;
     hr{
     width:100%;
     height: 2px;

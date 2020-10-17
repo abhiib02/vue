@@ -6,9 +6,9 @@
                     
                     <div class="">
                       
-                        <h1 class="title text-white text-shadow">Skills &amp; Experience</h1>
+                        <h1 class="title text-white ">Skills &amp; Experience</h1>
                         
-                     <span class='text-white text-shadow'>
+                     <span class='text-white '>
                             These are the technologies i have worked with.
                             <br>
                             All these technologies consist of frontend technologies like (HTML,CSS,JAVASCRIPT)

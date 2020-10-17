@@ -90,6 +90,10 @@ zIn:''
   position: relative;
   z-index: 2;
 }
+.center-grid{
+  display: grid;
+  place-items: center;
+}
 .center{
   display: flex;
   justify-content: center;
@@ -161,6 +165,8 @@ zIn:''
    padding-bottom:10vh;
   }
 }
+
+
 
 
 </style>
