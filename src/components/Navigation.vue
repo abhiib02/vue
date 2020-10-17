@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <a href="/" class="hide-on-mobile"><img class="logo" alt="Vue logo" src="../assets/logo.svg"></a>
+    <a href="/" class="hide-on-mobile"><img class="logo" alt="Vue logo" src="../assets/logonav.svg"></a>
     <ul>
       <li>
         <router-link to="/">
