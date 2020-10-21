@@ -84,7 +84,15 @@
   export default {
     data() {
       return {
-        projects: [{
+        projects: [
+          {
+            Name: 'Polar Auto and Engineering Industries',
+            Type: 'Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'polarauto.png',
+            Link: 'https://polarauto.in',
+            Status: 'Online'
+          },{
             Name: 'Sachin Packaging',
             Type: 'Android App',
             Tech: ['html5', 'css3', 'js', 'vuejs'],
