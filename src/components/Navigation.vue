@@ -66,7 +66,7 @@
       justify-content: center;
       align-items: center;
       color: #fff;
-      font-size: 1em;
+      font-size: 100%;
       text-decoration: none;
       transition: all .4s ease;
       padding: 10px 10px;
@@ -74,7 +74,7 @@
 
     &:hover {
       a {
-        font-size: 1.3em;
+        font-size: 130%;
       }
     }
   }
@@ -117,7 +117,35 @@ i {
 
 }
 
-  @media only screen and (max-width: 860px) {
+  @media only screen and (min-width: 1980px) and (max-width: 8192px) {
+    li {
+    list-style: none;
+
+    margin:0px;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 200%;
+      text-decoration: none;
+      transition: all .4s ease;
+      padding: 10px 10px;
+    }
+
+    &:hover {
+      a {
+        font-size: 230%;
+      }
+    }
+  }
+
+  }
+
+
+  @media only screen and (max-width: 830px) {
     nav {
       position: fixed;
       background-color: #111;
@@ -152,6 +180,7 @@ i {
         justify-content: center;
         align-items: center;
         color: #fff;
+        
         text-decoration: none;
         transition: all .4s ease;
       }
@@ -174,4 +203,5 @@ i {
       display: none;
     }
   }
+
 </style>
