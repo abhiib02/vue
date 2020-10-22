@@ -137,7 +137,7 @@
             Type: 'Digital Marketing Agency Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'dexo.jpg',
-            Link: 'http://www.backstagemumbai.in/',
+            Link: 'http://www.dexo.media/',
             Status: 'Offline'
           },
           {
