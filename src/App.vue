@@ -11,6 +11,7 @@
    
    
     <Navigation/>
+    <div class="background"></div>
     <transition name="page" mode="out-in">
     <router-view  class="animated " transition="slideInUp" />
     
@@ -42,7 +43,19 @@ zIn:''
 }
 </script>
 <style lang="scss">
+$bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC";
+$bg-width: 0px;
+$bg-height: 50px;
 
+/* Animations */
+
+@keyframes         bg-scrolling-reverse {
+  100% { background-position: $bg-width $bg-height; }
+}
+
+@keyframes         bg-scrolling {
+  0% { background-position: $bg-width $bg-height; }
+}
 
 
 .page-enter-active, .page-leave-active {
@@ -58,14 +71,21 @@ zIn:''
   box-sizing: border-box;
   
 }
-
+.background{
+  width:100%;
+  position: fixed;
+  height: 100%;
+  filter: invert(1);
+  background: url($bg-url) repeat 0 0;
+   animation:bg-scrolling-reverse .92s infinite linear; 
+}
 #app {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background:#222;
+ 
   
 }
 #nav {

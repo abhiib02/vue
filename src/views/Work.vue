@@ -87,7 +87,7 @@
         projects: [
           {
             Name: 'Polar Auto and Engineering Industries',
-            Type: 'Website',
+            Type: 'Seating manufacturing company Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'polarauto.png',
             Link: 'https://polarauto.in',

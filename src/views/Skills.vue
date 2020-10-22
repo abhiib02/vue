@@ -2,7 +2,7 @@
     <div class="fullvh center" @mousemove="mouseinvert($event)">
         <div class="container" >
             <div class="row">
-                <div class="col-md-12 text-left center-ver text-dark-cyan">
+                <div class="col-md-12 text-left center-ver ">
                     
                     <div class="">
                       
@@ -50,7 +50,7 @@
         <div class="container" >
             <hr width="100%" height="2px">
 <div class="page" v-bind:style="invertranslate">
-    <div v-for="(skill,index) in skills" v-bind:key="index"  class="box box-shadow"  >
+    <div v-for="(skill,index) in skills" v-bind:key="index"  class="box"  >
         <img :src="skill.techlogo" width="50px" height="50px"  alt="">
         <p style="font-size:.7em" >{{skill.tech}}</p>
     </div>
@@ -89,11 +89,11 @@ export default {
                     tech:'CSS3',
                 },
                 {   
-                    techlogo:'https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1150px-MySQL.svg.png',
+                    techlogo:'https://lh3.googleusercontent.com/proxy/RMsUSey2U_iMuX5EW2_DIi3rrxYpU4fSX0mAgq_beetcdUtaIxKFxBLmX5joDN5tBXsQrL2p4J-OTayWtdFjXzpk0JS3Ki5oQpHet_3ZS6GcfQ7QzjOjRUwwLu6Fn6ctdjpeF0oQW6yssHY2FrMaHSs',
                     tech:'MySQL',
                 },
                 {   
-                    techlogo:'https://www.prchecker.info/free-icons/128x128/php_128_px.png',
+                    techlogo:'https://www.php.net/images/logos/new-php-logo.svg',
                     tech:'PHP',
                 },
                 {   
@@ -125,7 +125,7 @@ export default {
                     tech:'Laravel',
                 },
                 {   
-                    techlogo:'https://www.stickpng.com/assets/images/58482acecef1014c0b5e4a1e.png',
+                    techlogo:'https://vuejs.org/images/logo.png?_sw-precache=cf23526f451784ff137f161b8fe18d5a',
                     tech:'Vue JS',
                 },
                 {   
@@ -179,25 +179,19 @@ export default {
   flex-direction: column;
   color:#0ff;
 }
-.box:nth-child(odd){
+.box{
   width:100px;
   height:100px;
-  background:#222;
+  background:#111;
   transition: all .2s ease;
   &:hover{
      transform:scale(1.2);
+     background:#0ff8;
+    color:#fff;
+    
+  }
+}
 
-  }
-}
-.box:nth-child(even){
-  width:100px;
-  height:100px;
-  background:#222;
-  transition: all .2s ease;
-  &:hover{
-     transform:scale(1.2);
-  }
-}
     .icons-2 {
         width: 70px;
         height: 70px;
@@ -221,7 +215,7 @@ export default {
     }
     p{
         margin:0;
-        text-shadow: 0px 0px 10px #0ff;
+        
     }
     @keyframes slideInLeft {
         0% {
