@@ -130,7 +130,7 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'bsm.jpg',
             Link: 'https://sitesdemo.netlify.app/backstage/',
-            Status: 'Offline'
+            Status: 'Online'
           },
           {
             Name: 'dexo.media',
@@ -154,7 +154,7 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'gyb.jpg',
             Link: 'https://sitesdemo.netlify.app/gyb/',
-            Status: 'Offline'
+            Status: 'Online'
           },
           {
             Name: 'unitedchemical.in',
