@@ -129,7 +129,7 @@
             Type: 'Interior Designing Company Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'bsm.jpg',
-            Link: 'http://www.backstagemumbai.in/',
+            Link: 'https://sitesdemo.netlify.app/backstage/',
             Status: 'Offline'
           },
           {
@@ -153,7 +153,7 @@
             Type: 'Business Consultation Company Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'gyb.jpg',
-            Link: 'http://gybindia.in/home',
+            Link: 'https://sitesdemo.netlify.app/gyb/',
             Status: 'Offline'
           },
           {
