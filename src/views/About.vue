@@ -3,7 +3,8 @@
    <div class="container">
             <div class="row">
                 <div class="col-md-6 center">
-                    <img class="profile" style="" src="https://graph.facebook.com/100005873828354/picture?width=400&amp;height=400" alt="">
+                    <img class="profile" style="" :src="imageUrl" alt="">
+                    
                 </div>
                 <div class="col-md-6 text-left center-ver text-dark-cyan ">
                     
@@ -24,6 +25,23 @@
         </div>
   </div>
 </template>
+<script>
+import Axios from 'axios'
+export default {
+    data(){
+        return {
+            imageUrl:''
+        }
+    },
+    mounted(){
+        Axios.get('https://www.instagram.com/abhiib02/?__a=1').then((response)=>{
+            this.imageUrl = response.data.graphql.user.profile_pic_url_hd;
+        });
+        
+
+    }
+}
+</script>
 <style lang="scss" scoped>
   .icon-o {
     width: 20px;
