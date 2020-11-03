@@ -6,7 +6,7 @@
                     
                     <div class="">
                       
-                        <h1 class="title text-white ">Skills &amp; Experience</h1>
+                        <h1 class="text-dark-cyan ">Skills &amp; Experience</h1>
                         
                      <span class='text-white '>
                             These are the technologies i have worked with.
@@ -162,6 +162,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+h1{
+    font-weight: bold;
+}
 .page{
   display:flex;
   justify-content:center;

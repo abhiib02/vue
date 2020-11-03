@@ -10,7 +10,7 @@
                     
                     <div class="">
                         
-                        <h1 class="title text-white ">About Me</h1>
+                        <h1 class="text-dark-cyan">About Me</h1>
                             
                             <span class='text-white '>My name is Abhishek Bhardwaj and i am 
                                 {{ new Date().getFullYear()-1995 }} Years old, i have a polytechnic diploma in <b>electronics and communication engineering</b> which was completed in the year of 2017, i also have a Degree of <b>Bachelors of
@@ -50,5 +50,7 @@ export default {
 .box-shadow {
     box-shadow: 0px 0px 30px #0ff;
 }
-
+h1{
+    font-weight: bold;
+}
 </style>

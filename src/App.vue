@@ -100,6 +100,12 @@ $bg-height: 50px;
     }
   }
 }
+h1{
+    font-weight: bold;
+}
+.text-dark-cyan {
+    color: #0ee;
+}
 .fullvh{
   padding-top:10vh;
  
@@ -134,9 +140,8 @@ $bg-height: 50px;
     box-shadow: 0px 0px 3px #0ff;
     ;
 }
-.text-dark-cyan {
-    color: #066;
-}
+
+
 .circle{
   width:10px;
   height:10px;

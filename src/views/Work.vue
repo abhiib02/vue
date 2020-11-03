@@ -6,7 +6,7 @@
 
         <div class="col-lg-5 relative text-left  text-dark-cyan">
             <div class="sticky">
-          <h1 class="title text-white ">Work</h1>
+             <h1 class="text-dark-cyan">Work</h1>
           
 
 
@@ -208,6 +208,10 @@
   }
 </script>
 <style lang="scss" scoped>
+h1{
+  font-weight: bold;
+  color:#0ee !important;
+}
   .relative{
     position: relative;
   }
@@ -351,4 +355,5 @@
 
     }
   }
+  
 </style>
