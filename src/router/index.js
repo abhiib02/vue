@@ -5,6 +5,7 @@ import Skills from '../views/Skills.vue'
 import Work from '../views/Work.vue'
 import Hobbies from '../views/Hobbies.vue'
 import Contact from '../views/Contact.vue'
+import Protected from '../views/protected.vue'
 import Blogs from '../views/Blogs.vue'
 import Blog from '../views/Blog.vue'
 Vue.use(VueRouter)
@@ -52,7 +53,12 @@ const routes = [{
         path: '/blog/:id',
         name: 'Blog',
         component: Blog
-    }
+    },
+    {
+        path: '/protected',
+        name: 'Protected',
+        component: Protected
+    },
 ]
 
 const router = new VueRouter({
