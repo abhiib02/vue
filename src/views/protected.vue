@@ -7,7 +7,7 @@
 
 <script>
 import netlifyIdentity from "netlify-identity-widget";
-import { mapGetters, mapActions } from "vuex";
+
 netlifyIdentity.init({
       APIUrl: "https://bhardwaj.netlify.app/.netlify/identity",
       logo: true // you can try false and see what happens
