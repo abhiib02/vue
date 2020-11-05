@@ -4,16 +4,18 @@
 	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#0ff;stroke-width:10px;
-	animation:anim 2s alternate linear;
+	animation:anim 5s alternate linear;
 	}
 	@keyframes anim{
 		0%{
-			stroke-dasharray:1000;
 			stroke-offset:100;
+			stroke-dasharray:0,8000;
+			stroke-linecap:round;
 		}
 		100%{
-			stroke-offset:10;
-			stroke-dasharray:1;
+			stroke-offset:100;
+			stroke-dasharray:8000,8000;
+			stroke-linecap:round;
 
 		}
 	}
