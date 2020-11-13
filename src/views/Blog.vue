@@ -1,5 +1,6 @@
 <template>
   <div class="Blog fullvh center">
+    
    <div >
      <div class="container-fluid text-light" >
         <h2 class="text-light text-left">{{index}}</h2>
@@ -20,6 +21,7 @@ ul{
   justify-content: center;
   align-items: center;
 }
+
 li{
   width:300px;
   height :300px;
@@ -29,6 +31,10 @@ padding:10px;
 </style>
 <script>
 import axios from 'axios';
+//import firebase from "firebase/app";
+//import "firebase/auth";
+//import "firebase/firestore";
+
 export default {
     
    data() {

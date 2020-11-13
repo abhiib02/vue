@@ -187,11 +187,7 @@ i {
         transition: all .4s ease;
       }
 
-      &:hover {
-        a {
-          
-        }
-      }
+     
     }
 
     .logo {

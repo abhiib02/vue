@@ -92,7 +92,16 @@
             Image: 'polarauto.png',
             Link: 'https://polarauto.in',
             Status: 'Online'
-          },{
+          }
+          ,{
+            Name: 'Tic Tac Toe',
+            Type: 'Vue Web App',
+            Tech: ['html5', 'css3', 'vuejs'],
+            Image: 'tictactoe.png',
+            Link: 'https://yw5rd.csb.app/',
+            Status: 'Online'
+          },
+          {
             Name: 'Sachin Packaging',
             Type: 'Android App',
             Tech: ['html5', 'css3', 'js', 'vuejs'],
