@@ -21,10 +21,10 @@
         <router-link to="/work">
           <i class="fas fa-pencil-ruler"></i>Work</router-link>
       </li>
-      <li>
+      <!--<li>
         <router-link to="/blogs">
           <i class="fas fa-blog"></i>Blog</router-link>
-      </li>
+      </li>-->
 
       <li>
         <router-link to="/contact">
