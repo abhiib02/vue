@@ -86,6 +86,14 @@
       return {
         projects: [
           {
+            Name: 'Woolman Agencies',
+            Type: 'Textile Machinery Distributor Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'woolman.png',
+            Link: 'https://woolman.in',
+            Status: 'Online'
+          },
+          {
             Name: 'Polar Auto and Engineering Industries',
             Type: 'Seating manufacturing company Website',
             Tech: ['html5', 'css3', 'js', 'php'],
