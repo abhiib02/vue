@@ -85,11 +85,19 @@
     data() {
       return {
         projects: [
+           {
+            Name: 'Simplest Carousel',
+            Type: 'Javacript Practice (Personal Side Project)',
+            Tech: ['html5', 'css3', 'js','vuejs'],
+            Image: 'carousel.jpg',
+            Link: 'https://abhiib02.github.io/Simplest-Carousal/',
+            Status: 'Online'
+          },
           {
             Name: 'Woolman Agencies',
             Type: 'Textile Machinery Distributor Website',
             Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'woolman.png',
+            Image: 'woolman.jpg',
             Link: 'https://woolman.in',
             Status: 'Online'
           },
@@ -107,14 +115,6 @@
             Tech: ['html5', 'css3', 'vuejs'],
             Image: 'tictactoe.png',
             Link: 'https://yw5rd.csb.app/',
-            Status: 'Online'
-          },
-          {
-            Name: 'Simplest Carousel',
-            Type: 'Javacript Practice (Personal Side Project)',
-            Tech: ['html5', 'css3', 'js','vuejs'],
-            Image: 'carousel.jpg',
-            Link: 'https://abhiib02.github.io/Simplest-Carousal/',
             Status: 'Online'
           },
           {
@@ -151,7 +151,7 @@
           },
           {
             Name: 'backstagemumbai.in',
-            Type: 'Interior Designing Company Website',
+            Type: 'Modeling and photography Company Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'bsm.jpg',
             Link: 'https://sitesdemo.netlify.app/backstage/',
@@ -167,7 +167,7 @@
           },
           {
             Name: 'gangmy.design',
-            Type: 'Designer Portfolio Website',
+            Type: 'Graphic Designer Portfolio Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'gang.jpg',
             Link: 'http://gangmy.design/',
