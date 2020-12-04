@@ -26,7 +26,7 @@
         <li class="tl_item Project_card" v-for="(project,index) in projects" :key= index >
           <!-- Card -->
           <div class="card card-dark">
-
+            
             <!-- Card image -->
             <img class="card-img-top" :src="require('../assets/'+project.Image)" alt="Card image cap">
 
@@ -103,10 +103,18 @@
           }
           ,{
             Name: 'Tic Tac Toe',
-            Type: 'Vue Web App',
+            Type: 'Vue Web App (Personal Side Project)',
             Tech: ['html5', 'css3', 'vuejs'],
             Image: 'tictactoe.png',
             Link: 'https://yw5rd.csb.app/',
+            Status: 'Online'
+          },
+          ,{
+            Name: 'Simplest Carousel',
+            Type: 'Javacript Practice (Personal Side Project)',
+            Tech: ['html5', 'css3', 'js','vuejs'],
+            Image: 'carousel.jpg',
+            Link: 'https://abhiib02.github.io/Simplest-Carousal/',
             Status: 'Online'
           },
           {
