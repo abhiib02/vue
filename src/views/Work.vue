@@ -89,7 +89,7 @@
             Name: 'Simplest Carousel',
             Type: 'Javacript Practice (Personal Side Project)',
             Tech: ['html5', 'css3', 'js','vuejs'],
-            Image: 'carousel.jpg',
+            Image: 'carousal.jpg',
             Link: 'https://abhiib02.github.io/Simplest-Carousal/',
             Status: 'Online'
           },
