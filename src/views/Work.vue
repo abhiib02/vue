@@ -109,7 +109,7 @@
             Link: 'https://yw5rd.csb.app/',
             Status: 'Online'
           },
-          ,{
+          {
             Name: 'Simplest Carousel',
             Type: 'Javacript Practice (Personal Side Project)',
             Tech: ['html5', 'css3', 'js','vuejs'],
