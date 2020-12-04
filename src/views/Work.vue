@@ -100,8 +100,8 @@
             Image: 'polarauto.png',
             Link: 'https://polarauto.in',
             Status: 'Online'
-          }
-          ,{
+          },
+          {
             Name: 'Tic Tac Toe',
             Type: 'Vue Web App (Personal Side Project)',
             Tech: ['html5', 'css3', 'vuejs'],
