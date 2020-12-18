@@ -1,0 +1,13 @@
+{
+    "name":"Abhishek Bhardwaj",
+    "short_name":"Abhishek",
+    "start_url":"/",
+    "icons":[{
+        "src":"logonav.svg",
+        "type":"image/svg"
+    }],
+    "theme_color":"#00ffff",
+    "background_color":"#000000",
+    "display":"fullscreen",
+    "orientation":"portrait"
+}

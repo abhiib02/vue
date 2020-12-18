@@ -257,6 +257,7 @@ h1{
   hr{
     background:#0ff;
   }
+
   .card-dark{
      background-color: #111;
      padding: 10px;
@@ -272,6 +273,7 @@ h1{
       border-right:#0ff 5px solid;
       padding: 0 15px;
     }
+    
 
     .tl_item:nth-child(even) {
       transform: translateX(49.3%);
