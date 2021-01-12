@@ -89,7 +89,7 @@
             Name: 'Laxmicart.com',
             Type: 'Online Book Seller E-Commerce',
             Tech: ['html5', 'css3', 'js','wordpress'],
-            Image: 'laxmi.jpg',
+            Image: 'laxmi.png',
             Link: 'https://laxmicart.com/',
             Status: 'Online'
           },
