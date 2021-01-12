@@ -57,6 +57,9 @@
                 </span>
                 
               </div>
+              <div class="pos-rb">
+                <b>{{project.Published}}</b>                
+              </div>
               <!-- Button -->
               <a :href="project.Link" target="_blank" class="btn btn-outline-cyan text-white btn-sm waves-effect cyan">Visit</a>
 
@@ -91,7 +94,8 @@
             Tech: ['html5', 'css3', 'js','wordpress'],
             Image: 'laxmi.png',
             Link: 'https://laxmicart.com/',
-            Status: 'Online'
+            Status: 'Online',
+            Published : "Jan 2021"
           },
           {
             Name: 'Simplest Carousel',
@@ -99,7 +103,8 @@
             Tech: ['html5', 'css3', 'js','vuejs'],
             Image: 'carousal.jpg',
             Link: 'https://abhiib02.github.io/Simplest-Carousal/',
-            Status: 'Online'
+            Status: 'Online',
+            Published : "Dec 2020"
           },
           {
             Name: 'Woolman Agencies',
@@ -107,15 +112,8 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'woolman.jpg',
             Link: 'https://woolman.in',
-            Status: 'Online'
-          },
-          {
-            Name: 'Polar Auto and Engineering Industries',
-            Type: 'Seating manufacturing company Website',
-            Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'polarauto.png',
-            Link: 'https://polarauto.in',
-            Status: 'Online'
+            Status: 'Online',
+            Published : "Nov 2020"
           },
           {
             Name: 'Tic Tac Toe',
@@ -123,7 +121,17 @@
             Tech: ['html5', 'css3', 'vuejs'],
             Image: 'tictactoe.png',
             Link: 'https://yw5rd.csb.app/',
-            Status: 'Online'
+            Status: 'Online',
+            Published : "Nov 2020"
+          },
+          {
+            Name: 'Polar Auto and Engineering Industries',
+            Type: 'Seating manufacturing company Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'polarauto.png',
+            Link: 'https://polarauto.in',
+            Status: 'Online',
+            Published : "Oct 2020"
           },
           {
             Name: 'Sachin Packaging',
@@ -131,47 +139,8 @@
             Tech: ['html5', 'css3', 'js', 'vuejs'],
             Image: 'splogo.png',
             Link: '',
-            Status: 'Online'
-          },
-          {
-            Name: 'victoryworldtourism.com',
-            Type: 'Travel Website',
-            Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'vwt.jpg',
-            Link: 'http://victoryworldtourism.com/',
-            Status: 'Online'
-          },
-          {
-            Name: 'voyagersbeat.com',
-            Type: 'Travel Website',
-            Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'vb.jpg',
-            Link: 'https://voyagersbeat.com',
-            Status: 'Online'
-          },
-          {
-            Name: 'woodcraftint.com',
-            Type: 'Interior Designing Company Website',
-            Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'wci.jpg',
-            Link: 'https://www.woodcraftint.com/',
-            Status: 'Online'
-          },
-          {
-            Name: 'backstagemumbai.in',
-            Type: 'Modeling and photography Company Website',
-            Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'bsm.jpg',
-            Link: 'https://sitesdemo.netlify.app/backstage/',
-            Status: 'Online'
-          },
-          {
-            Name: 'dexo.media',
-            Type: 'Digital Marketing Agency Website',
-            Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'dexo.jpg',
-            Link: 'http://www.dexo.media/',
-            Status: 'Offline'
+            Status: 'Online',
+            Published : "May 2020"
           },
           {
             Name: 'gangmy.design',
@@ -179,15 +148,8 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'gang.jpg',
             Link: 'http://gangmy.design/',
-            Status: 'Online'
-          },
-          {
-            Name: 'gybindia.in',
-            Type: 'Business Consultation Company Website',
-            Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'gyb.jpg',
-            Link: 'https://sitesdemo.netlify.app/gyb/',
-            Status: 'Online'
+            Status: 'Online',
+            Published : "Oct 2020"
           },
           {
             Name: 'unitedchemical.in',
@@ -195,7 +157,8 @@
             Tech: ['html5', 'css3', 'js'],
             Image: 'uci.jpg',
             Link: 'http://unitedchemical.in/',
-            Status: 'Online'
+            Status: 'Online',
+            Published : "Oct 2019"
           },
           {
             Name: 'madanfashion.in',
@@ -203,7 +166,63 @@
             Tech: ['html5', 'css3', 'js', 'php','wordpress'],
             Image: 'mf.jpg',
             Link: 'http://madanfashion.in/',
-            Status: 'Offline'
+            Status: 'Offline',
+            Published : "Sep 2019"
+          },
+          {
+            Name: 'victoryworldtourism.com',
+            Type: 'Travel Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'vwt.jpg',
+            Link: 'http://victoryworldtourism.com/',
+            Status: 'Online',
+            Published : "Sep 2019"
+          },
+          
+          {
+            Name: 'woodcraftint.com',
+            Type: 'Interior Designing Company Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'wci.jpg',
+            Link: 'https://www.woodcraftint.com/',
+            Status: 'Online',
+            Published : "May 2019"
+          },
+          {
+            Name: 'gybindia.in',
+            Type: 'Business Consultation Company Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'gyb.jpg',
+            Link: 'https://sitesdemo.netlify.app/gyb/',
+            Status: 'Online',
+            Published : "May 2019"
+          },
+          {
+            Name: 'backstagemumbai.in',
+            Type: 'Modeling and photography Company Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'bsm.jpg',
+            Link: 'https://sitesdemo.netlify.app/backstage/',
+            Status: 'Online',
+            Published : "April 2019"
+          },
+          {
+            Name: 'dexo.media',
+            Type: 'Digital Marketing Agency Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'dexo.jpg',
+            Link: 'http://www.dexo.media/',
+            Status: 'Offline',
+            Published : "April 2019"
+          },
+          {
+            Name: 'voyagersbeat.com',
+            Type: 'Travel Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'vb.jpg',
+            Link: 'https://voyagersbeat.com',
+            Status: 'Online',
+            Published : "Mar 2019"
           },
           {
             Name: 'petitepebble.com',
@@ -211,7 +230,8 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'pp.jpg',
             Link: 'http://www.petitepebble.com/',
-            Status: 'Offline'
+            Status: 'Offline',
+            Published : "Dec 2018"
           },
           {
             Name: 'scc-education.com',
@@ -219,7 +239,8 @@
             Tech: ['html5', 'css3', 'blogger'],
             Image: 'scc.jpg',
             Link: 'https://www.scc-education.com/',
-            Status: 'Online'
+            Status: 'Online',
+            Published : "Jun 2015"
           },
           {
             Name: 'dynamohack.blogspot.com',
@@ -227,7 +248,8 @@
             Tech: ['html5', 'css3', 'blogger'],
             Image: 'dynamo.jpg',
             Link: 'https://dynamohack.blogspot.com/',
-            Status: 'Online'
+            Status: 'Online',
+            Published : "Aug 2013"
           }
         ]
       }
@@ -261,6 +283,10 @@ h1{
   .pos-lb{
     position:absolute;
     left:2%;bottom:2%;
+  }
+  .pos-rb{
+    position:absolute;
+    right:2%;bottom:2%;
   }
   hr{
     background:#0ff;
