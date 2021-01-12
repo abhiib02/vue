@@ -86,6 +86,14 @@
       return {
         projects: [
            {
+            Name: 'Laxmicart.com',
+            Type: 'Online Book Seller E-Commerce',
+            Tech: ['html5', 'css3', 'js','wordpress'],
+            Image: 'laxmi.jpg',
+            Link: 'https://laxmicart.com/',
+            Status: 'Online'
+          },
+          {
             Name: 'Simplest Carousel',
             Type: 'Javacript Practice (Personal Side Project)',
             Tech: ['html5', 'css3', 'js','vuejs'],
