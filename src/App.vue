@@ -1,6 +1,6 @@
 <template>
 
-  <div id="app" @mousemove="cursorfollow($event)" v-bind:class="{nightmode:nightmode}">
+  <div id="app"  v-bind:class="{nightmode:nightmode}">
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
