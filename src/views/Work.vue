@@ -89,7 +89,7 @@
       return {
         projects: [
           {
-            Name: 'https://daikichiconsulting.com/',
+            Name: 'Daikichi consulting Service',
             Type: 'Consultancy for india and japan',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'daikichi.png',
