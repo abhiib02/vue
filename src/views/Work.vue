@@ -88,6 +88,15 @@
     data() {
       return {
         projects: [
+          {
+            Name: 'https://daikichiconsulting.com/',
+            Type: 'Consultancy for india and japan',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'daikichi.png',
+            Link: 'https://daikichiconsulting.com/',
+            Status: 'Online',
+            Published : "Jan 2021"
+          },
            {
             Name: 'Laxmicart.com',
             Type: 'Online Book Seller E-Commerce',
