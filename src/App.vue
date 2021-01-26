@@ -140,8 +140,6 @@ h1{
     box-shadow: 0px 0px 3px #0ff;
     ;
 }
-
-
 .circle{
   width:10px;
   height:10px;
@@ -168,6 +166,15 @@ h1{
   .profile{
     border-radius: 50%;
     width:100%;
+  }
+  .brdr-btm{
+    outline:0px !important;
+    border:0px !important;
+    border-bottom:2px aqua solid !important;
+    transition: all .2s ease-in;
+  }
+  .brdr-btm:focus{
+    border-bottom:10px aqua solid !important;
   }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
