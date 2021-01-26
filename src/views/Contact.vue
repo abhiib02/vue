@@ -24,7 +24,7 @@
     <input type="hidden" name="_subject" value="Query From Portfolio">
     <input type="text" name="_honey" style="display:none">
     <input type="text" id="Name" class=" bg-transparent text-light  brdr-btm" placeholder="Name" style="width:100%;">
-    <input type="hidden" name="_next" value="https://bhardwaj.netlify.app/thanks">
+    <input type="hidden" name="_next" value="https://bhardwaj.netlify.app/#/thanks">
     <!-- Email -->
     <input type="email" id="Email" class=" bg-transparent  text-light mt-4 brdr-btm" placeholder="E-mail" style="width:100%;">
 
