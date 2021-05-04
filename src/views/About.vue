@@ -3,7 +3,7 @@
    <div class="container">
             <div class="row">
                 <div class="col-md-6 center">
-                    <img class="profile" style="" :src="imageUrl" alt="">
+                    <img class="profile" style="" :src="require('../assets/'+imageUrl)" alt="">
                     
                 </div>
                 <div class="col-md-6 text-left center-ver text-dark-cyan ">
@@ -26,20 +26,26 @@
   </div>
 </template>
 <script>
-import Axios from 'axios'
+//import Axios from 'axios'
 export default {
     data(){
         return {
-            imageUrl:''
+            imageUrl:'me.jpg'
         }
     },
-    mounted(){
-        Axios.get('https://www.instagram.com/abhiib02/?__a=1').then((response)=>{
+    /*mounted(){
+        Axios.get('https://www.instagram.com/abhiib02/?__a=1',{
+            mode: 'no-cors',
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Content-Type': 'application/json',
+            }
+        }).then((response)=>{
             this.imageUrl = response.data.graphql.user.profile_pic_url_hd;
         });
         
 
-    }
+    }*/
 }
 </script>
 <style lang="scss" scoped>
