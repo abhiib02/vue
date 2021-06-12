@@ -89,6 +89,15 @@
       return {
         projects: [
           {
+            Name: 'V3 Plus Switches',
+            Type: 'Electrical Accessories Manufacturing Company',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'v3.png',
+            Link: 'http://v3plusswitches.com/',
+            Status: 'Online',
+            Published : "Jun 2021"
+          },
+          {
             Name: 'Daikichi consulting Service',
             Type: 'Consultancy for india and japan',
             Tech: ['html5', 'css3', 'js', 'php'],
