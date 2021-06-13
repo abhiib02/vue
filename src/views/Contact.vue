@@ -13,7 +13,7 @@
                 <a class="text-white" href="https://www.instagram.com/abhiib02/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a class="text-white" href="https://codepen.io/abhishek-bhardwaj/" target="_blank"><i class="fab fa-codepen"></i></a>
             </div>
-            <p>© 2019 - Copyright Abhishek Bhardwaj, All Rights Reserved.</p>
+            <p>© {{ new Date().getFullYear() }} - Copyright Abhishek Bhardwaj, All Rights Reserved.</p>
             </div>
             <div class="col-lg-6 center">
              <form action="https://formsubmit.co/abhiib02@gmail.com" method="POST">
