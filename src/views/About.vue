@@ -30,10 +30,10 @@
 export default {
     data(){
         return {
-            imageUrl:''
+            imageUrl:'me.jpg'
         }
     },
-    mounted(){
+    /*mounted(){
         Axios.get('https://www.instagram.com/abhiib02/?__a=1',{
             mode: 'no-cors',
             headers: {
@@ -45,7 +45,7 @@ export default {
         });
         
 
-    }
+    }*/
 }
 </script>
 <style lang="scss" scoped>
