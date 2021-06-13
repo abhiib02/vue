@@ -89,7 +89,7 @@ export default {
                     tech:'CSS3',
                 },
                 {   
-                    techlogo:'https://lh3.googleusercontent.com/proxy/RMsUSey2U_iMuX5EW2_DIi3rrxYpU4fSX0mAgq_beetcdUtaIxKFxBLmX5joDN5tBXsQrL2p4J-OTayWtdFjXzpk0JS3Ki5oQpHet_3ZS6GcfQ7QzjOjRUwwLu6Fn6ctdjpeF0oQW6yssHY2FrMaHSs',
+                    techlogo:'https://pngimg.com/uploads/mysql/mysql_PNG23.png',
                     tech:'MySQL',
                 },
                 {   
