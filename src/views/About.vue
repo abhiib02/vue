@@ -30,10 +30,10 @@
 export default {
     data(){
         return {
-            imageUrl:'me.jpg'
+            imageUrl:''
         }
     },
-    /*mounted(){
+    mounted(){
         Axios.get('https://www.instagram.com/abhiib02/?__a=1',{
             mode: 'no-cors',
             headers: {
@@ -41,11 +41,11 @@ export default {
                 'Content-Type': 'application/json',
             }
         }).then((response)=>{
-            this.imageUrl = response.data.graphql.user.profile_pic_url_hd;
+            this.imageUrl = response.data.graphql.user.profile_pic_url;
         });
         
 
-    }*/
+    }
 }
 </script>
 <style lang="scss" scoped>
