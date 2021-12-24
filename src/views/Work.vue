@@ -88,6 +88,15 @@
     data() {
       return {
         projects: [
+           {
+            Name: 'Elliot Waves Calculator',
+            Type: 'Investment and Trading Tool',
+            Tech: ['html5', 'css3', 'js'],
+            Image: 'ewc.jpg',
+            Link: 'https://i95p5.csb.app/',
+            Status: 'Online',
+            Published : "Dec 2021"
+          },
           {
             Name: 'V3 Plus Switches',
             Type: 'Electrical Accessories Manufacturing Company',
