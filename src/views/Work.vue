@@ -92,7 +92,7 @@
             Name: 'Elliot Waves Calculator',
             Type: 'Investment and Trading Tool',
             Tech: ['html5', 'css3', 'js'],
-            Image: 'ewc.jpg',
+            Image: 'ewc.jpeg',
             Link: 'https://i95p5.csb.app/',
             Status: 'Online',
             Published : "Dec 2021"
