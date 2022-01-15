@@ -93,7 +93,7 @@
             Type: 'Investment and Trading Tool',
             Tech: ['html5', 'css3', 'js'],
             Image: 'ewc.jpeg',
-            Link: 'https://i95p5.csb.app/',
+            Link: 'https://abhiib02.github.io/elliot_wave_calc/',
             Status: 'Online',
             Published : "Dec 2021"
           },
