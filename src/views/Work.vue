@@ -92,7 +92,7 @@
             Name: 'Elliot Waves Calculator',
             Type: 'Investment and Trading Tool',
             Tech: ['html5', 'css3', 'js'],
-            Image: 'ewc.jpeg',
+            Image: 'ewc.png',
             Link: 'https://abhiib02.github.io/elliot_wave_calc/',
             Status: 'Online',
             Published : "Dec 2021"
