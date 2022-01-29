@@ -103,7 +103,7 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'v3.png',
             Link: 'http://v3plusswitches.com/',
-            Status: 'Online',
+            Status: 'Offline',
             Published : "Jun 2021"
           },
           {
@@ -139,7 +139,7 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'woolman.jpg',
             Link: 'https://woolman.in',
-            Status: 'Online',
+            Status: 'Offline',
             Published : "Nov 2020"
           },
           {
@@ -157,7 +157,7 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'polarauto.png',
             Link: 'https://polarauto.in',
-            Status: 'Online',
+            Status: 'Offline',
             Published : "Oct 2020"
           },
           {
@@ -166,7 +166,7 @@
             Tech: ['html5', 'css3', 'js', 'vuejs'],
             Image: 'splogo.png',
             Link: '',
-            Status: 'Online',
+            Status: 'Offline',
             Published : "May 2020"
           },
           {
@@ -175,7 +175,7 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'gang.jpg',
             Link: 'http://gangmy.design/',
-            Status: 'Online',
+            Status: 'Offline',
             Published : "Oct 2020"
           },
           {
@@ -202,7 +202,7 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'vwt.jpg',
             Link: 'http://victoryworldtourism.com/',
-            Status: 'Online',
+            Status: 'Offline',
             Published : "Sep 2019"
           },
           
