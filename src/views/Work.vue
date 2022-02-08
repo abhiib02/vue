@@ -301,9 +301,13 @@
 </script>
 <style lang="scss" scoped>
 .badge{
+  border-radius:50%;
   width:10px;
   height:10px;
   animation: blink-1 3s linear infinite both;
+}
+.badge:empty {
+    display: block;
 }
 h1{
   font-weight: bold;
