@@ -300,7 +300,11 @@
   }
 </script>
 <style lang="scss" scoped>
-
+.badge{
+  width:10px;
+  height:10px;
+  animation: blink-1 3s linear infinite both;
+}
 h1{
   font-weight: bold;
   color:#0ee !important;
@@ -458,5 +462,15 @@ h1{
 
     }
   }
-  
+  @keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
 </style>
