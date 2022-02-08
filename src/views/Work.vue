@@ -88,6 +88,15 @@
     data() {
       return {
         projects: [
+        {
+            Name: 'voyagersbeat.com',
+            Type: 'Travel Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'vb.jpg',
+            Link: 'https://voyagersbeat.com',
+            Status: 'Online',
+            Published : "Mar 2019 Redesigned 2022"
+          },
           {
               Name: 'Ultra Lite Slider',
               Type: 'Javacript Practice (Personal Side Project)',
@@ -251,15 +260,7 @@
             Status: 'Offline',
             Published : "April 2019"
           },
-          {
-            Name: 'voyagersbeat.com',
-            Type: 'Travel Website',
-            Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'vb.jpg',
-            Link: 'https://voyagersbeat.com',
-            Status: 'Online',
-            Published : "Mar 2019"
-          },
+          
           {
             Name: 'petitepebble.com',
             Type: 'Business Consultation Company Website',
