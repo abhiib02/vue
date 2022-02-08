@@ -88,6 +88,15 @@
     data() {
       return {
         projects: [
+          {
+              Name: 'Ultra Lite Slider',
+              Type: 'Javacript Practice (Personal Side Project)',
+              Tech: ['html5', 'css3', 'js'],
+              Image: 'uls.jpg',
+              Link: 'https://abhiib02.github.io/Ultra_Lite_Slider/',
+              Status: 'Online',
+              Published : "Feb 2022"
+            },
            {
             Name: 'Elliot Waves Calculator',
             Type: 'Investment and Trading Tool',
