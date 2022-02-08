@@ -320,10 +320,14 @@ h1{
   .pos-lb{
     position:absolute;
     left:2%;bottom:2%;
+    font-size: 12px;
+
   }
   .pos-rb{
     position:absolute;
     right:2%;bottom:2%;
+    font-size: 12px;
+
   }
   hr{
     background:#0ff;
