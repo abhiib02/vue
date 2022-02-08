@@ -39,7 +39,7 @@
               </h5>
               <!-- Text -->
               <p class="card-text">{{project.Type}}</p>
-              <hr>
+              
               <ul class="tech_list">
                 <li class="tech_item" v-for="(tech,index) in project.Tech" :key="index">
                   <i :class="'icon-o fab fa-'+tech"></i>
@@ -49,11 +49,11 @@
               <div class="pos-lb">
                 
                 <span v-if="project.Status == 'Online'" class="badge badge-success">
-                  {{project.Status}}
+                  
                 </span>
 
                 <span  v-if="project.Status == 'Offline'" class="badge badge-danger">
-                  {{project.Status}}
+                  
                 </span>
                 
               </div>
@@ -300,6 +300,7 @@
   }
 </script>
 <style lang="scss" scoped>
+
 h1{
   font-weight: bold;
   color:#0ee !important;
