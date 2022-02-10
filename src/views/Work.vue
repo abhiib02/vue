@@ -215,7 +215,7 @@
             Published : "Sep 2019"
           },
           {
-            Name: 'victoryworldtourism.com',
+            Name: 'Victory World Tourism',
             Type: 'Travel Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'vwt.jpg',
