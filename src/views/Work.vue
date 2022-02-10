@@ -219,8 +219,8 @@
             Type: 'Travel Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'vwt.jpg',
-            Link: 'http://victoryworldtourism.com/',
-            Status: 'Offline',
+            Link: 'http://vwt.infinityfreeapp.com/',
+            Status: 'Online',
             Published : "Sep 2019"
           },
           
