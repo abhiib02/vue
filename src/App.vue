@@ -31,7 +31,7 @@ export default {
       
   },
   mounted(){
-    <script defer>
+    
 
         let camera
         let scene
@@ -111,7 +111,7 @@ export default {
           scene.rotation.y += 0.002
         }
 
-</script>
+
   },
   computed:{},
   data(){
