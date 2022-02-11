@@ -11,7 +11,7 @@
    
    
     <Navigation/>
-    <div class="background"></div>
+    <!--<div class="background"></div>-->
     <transition name="page" mode="out-in">
     <router-view  class="animated " transition="slideInUp" />
     
