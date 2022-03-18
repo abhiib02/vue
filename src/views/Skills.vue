@@ -113,7 +113,7 @@ export default {
                     tech:'Bootstrap',
                 },
                 {   
-                    techlogo:'https://formvalidation.io/branches/bulma.svg',
+                    techlogo:'https://bulma.io/assets/Bulma%20Icon.png',
                     tech:'Bulma',
                 },
                 {   
