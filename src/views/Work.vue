@@ -23,7 +23,7 @@
             <div class="container">
       
       <ul class="tl_list">
-        <li class="tl_item Project_card" v-for="(project,index) in projects" :key= index >
+        <li class="tl_item Project_card" v-for="(project,index) in projects" :key= "index" >
           <!-- Card -->
           <div class="card card-dark">
             
