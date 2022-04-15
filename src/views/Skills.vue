@@ -114,7 +114,7 @@ export default {
                 },
                 {   
                     techlogo:'https://bulma.io/assets/Bulma%20Icon.png',
-                    tech:'Bulma',
+                    tech:'Bulma.io',
                 },
                 {   
                     techlogo:'https://www.consolebit.com/media/technologies/logo-materialize.png',

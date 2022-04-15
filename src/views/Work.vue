@@ -28,8 +28,8 @@
           <div class="card card-dark">
             
             <!-- Card image -->
-            <img class="card-img-top" :src="require('../assets/'+project.Image)" alt="Card image cap">
-
+            <!--<img class="card-img-top" :src="require('../assets/'+project.Image)" alt="Card image cap">-->
+            <iframe :src="project.Link" width="1280" height="720" frameborder="0"></iframe>
             <!-- Card content -->
             <div class="card-body">
 
@@ -401,7 +401,10 @@ h1{
       border-right: #0ff 5px solid;
     }
   }
-
+  iframe {
+          transform: scale(0.2);
+          pointer-events: none;
+        }
   @media only screen and (max-width: 860px) {
 .Project_card {
     width: 100%;
