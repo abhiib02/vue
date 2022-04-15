@@ -29,7 +29,9 @@
             
             <!-- Card image -->
             <!--<img class="card-img-top" :src="require('../assets/'+project.Image)" alt="Card image cap">-->
+            <div class="iframe">
             <iframe :src="project.Link" width="1280" height="720" frameborder="0"></iframe>
+            </div>
             <!-- Card content -->
             <div class="card-body">
 
@@ -401,7 +403,7 @@ h1{
       border-right: #0ff 5px solid;
     }
   }
-  iframe {
+  .iframe {
           transform: scale(0.2);
           pointer-events: none;
         }
