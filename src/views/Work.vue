@@ -48,11 +48,11 @@
               </ul>
               <div class="pos-lb">
                 
-                <span v-if="project.Status == 'Online'" class="badge badge-success">
+                <span v-if="getStatusCode(project.Link) == 'Online'" class="badge badge-success">
                   
                 </span>
 
-                <span  v-if="project.Status == 'Offline'" class="badge badge-danger">
+                <span  v-if="getStatusCode(project.Link) == 'Offline'" class="badge badge-danger">
                   
                 </span>
                 
