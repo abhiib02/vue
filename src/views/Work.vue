@@ -297,7 +297,13 @@ import Axios from 'axios'
         return "../assets/"+image ;
       }, 
       async getStatusCode(url){
-                  await Axios.get(`https://anothervps.com/api/can-visit/?url=${url}`
+                  await Axios.get(`https://anothervps.com/api/can-visit/?url=${url}`,{
+                    headers: {
+                        'Access-Control-Allow-Origin': '*',
+                        'Content-Type': 'application/json',
+                    },
+                    withCredentials: true
+                  }
                   ).then((response) => {
                     if(!response.result){
                       return 'Offline';
