@@ -297,15 +297,14 @@ import Axios from 'axios'
         return "../assets/"+image ;
       }, 
       async getStatusCode(url){
-                  await Axios.get(url,{
-                    withCredentials: true,
-                  }).then(() => {
-                      return 'Online';
-                    }).catch(function (error) {
-                                            if (error.response) {
-                                              return 'Offline';
-                                            }
-                                              });
+                  await Axios.get(`https://anothervps.com/api/can-visit/?url=${url}`
+                  ).then((response) => {
+                    if(!response.result){
+                      return 'Offline';
+                    }
+                    return 'Online';
+
+                    });
       }
     }
   }
