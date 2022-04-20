@@ -25,7 +25,7 @@
       <ul class="tl_list">
         <li class="tl_item Project_card" v-for="(project,index) in projects" :key= "index" >
           <!-- Card -->
-          <div class="card card-dark">
+          <div class="card card-dark" :class="[project.Status=='Online' ? card-online : card-offline]">
             
             <!-- Card image -->
             <img class="card-img-top" :src="require('../assets/'+project.Image)" alt="Card image cap">
@@ -345,6 +345,13 @@ h1{
   .card-dark{
      background-color: #111;
      padding: 10px;
+  }
+  .card-online{
+     border-top:5px solid #00c851;
+  }
+  .card-offline{
+     border-top:5px solid #ff3547;
+     
   }
   .tl_list {
     display: grid;
