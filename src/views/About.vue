@@ -13,8 +13,8 @@
                         <h1 class="text-dark-cyan">About Me</h1>
                             
                             <span class='text-white '>My name is Abhishek Bhardwaj and i am 
-                                {{ new Date().getFullYear()-1995 }} Years old, i have a polytechnic diploma in <b>electronics and communication engineering</b> which was completed in the year of 2017, i also have a Degree of <b>Bachelors of
-                            computer application</b> from IGNOU in the year of 2018, i am a tech enthusiast who want to know about new technologies but more interested in <b>website designing and development</b>,i also maintain a facebook page with around thousand
+                                {{ new Date().getFullYear()-1995 }} Years old, i have a polytechnic diploma in <b class="text-dark-cyan">electronics and communication engineering</b> which was completed in the year of 2017, i also have a Degree of <b class="text-dark-cyan">Bachelors of
+                            computer application</b> from IGNOU in the year of 2018, i am a tech enthusiast who want to know about new technologies but more interested in <b class="text-dark-cyan">website designing and development</b>,i also maintain a facebook page with around thousand
                             likes i also manage tech blog mention inside projects, i like to play video game and listening songs,to Know More About me there are navigation links.</span>
                     </div>
                    
