@@ -3,7 +3,7 @@
    <div class="container">
             <div class="row">
                 <div class="col-md-6 center">
-                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="abhishek-bhardwaj-191b9784" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/abhishek-bhardwaj-191b9784?trk=profile-badge">Abhishek Bhardwaj</a></div>
+                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="abhishek-bhardwaj-191b9784" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/abhishek-bhardwaj-191b9784?trk=profile-badge"></div>
               
                 </div>
                 <div class="col-md-6 text-left center-ver text-dark-cyan ">
