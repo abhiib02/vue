@@ -48,11 +48,11 @@
               </ul>
               <div class="pos-lb">
                 
-                <span v-if="getStatusCode(project.Link) == 'Online'" class="badge badge-success">
+                <span v-if="project.Status == 'Online'" class="badge badge-success">
                   
                 </span>
 
-                <span  v-if="getStatusCode(project.Link) == 'Offline'" class="badge badge-danger">
+                <span  v-if="project.Status == 'Offline'" class="badge badge-danger">
                   
                 </span>
                 
@@ -83,7 +83,7 @@
 
 </template>
 <script>
-import Axios from 'axios'
+
   export default {
     data() {
       return {
@@ -296,22 +296,6 @@ import Axios from 'axios'
       fullPath(image){
         return "../assets/"+image ;
       }, 
-      async getStatusCode(url){
-                  await Axios.get(`https://anothervps.com/api/can-visit/?url=${url}`,{
-                    headers: {
-                        'Access-Control-Allow-Origin': '*',
-                        'Content-Type': 'application/json',
-                    },
-                    withCredentials: true
-                  }
-                  ).then((response) => {
-                    if(!response.result){
-                      return 'Offline';
-                    }
-                    return 'Online';
-
-                    });
-      }
     }
   }
 </script>
