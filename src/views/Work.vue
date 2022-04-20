@@ -83,7 +83,7 @@
 
 </template>
 <script>
-
+import Axios from 'axios'
   export default {
     data() {
       return {
@@ -296,6 +296,18 @@
       fullPath(image){
         return "../assets/"+image ;
       }, 
+      getStatusCode(url){
+                  axios.get(url).then((response) => {
+                      return 'Online';
+                    }).catch(function (error) {
+                                            if (error.response) {
+                                              console.log(error.response.data);
+                                              console.log(error.response.status);
+                                              console.log(error.response.headers);
+                                              return 'Offline';
+                                            }
+                                              });
+      }
     }
   }
 </script>
