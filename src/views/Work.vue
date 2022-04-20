@@ -346,17 +346,12 @@ h1{
      background-color: #111;
      padding: 10px;
   }
-  .card-dark:nth-child(even)>.card-online{
-     border-left:3px solid #00c851;
+  .card-online{
+     border-top:3px solid #00c851;
   }
-  .card-dark:nth-child(odd)>.card-online{
-     border-right:3px solid #00c851;
-  }
-  .card-dark:nth-child(even)>.card-offline{
-     border-left:3px solid #ff3547;  
-  }
-  .card-dark:nth-child(odd)>.card-offline{
-     border-right:3px solid #ff3547;  
+  .card-offline{
+     border-top:3px solid #ff3547;
+     
   }
   .tl_list {
     display: grid;
