@@ -297,13 +297,10 @@ import Axios from 'axios'
         return "../assets/"+image ;
       }, 
       getStatusCode(url){
-                  Axios.get(url).then((response) => {
+                  Axios.get(url).then(() => {
                       return 'Online';
                     }).catch(function (error) {
                                             if (error.response) {
-                                              console.log(error.response.data);
-                                              console.log(error.response.status);
-                                              console.log(error.response.headers);
                                               return 'Offline';
                                             }
                                               });
