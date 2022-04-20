@@ -25,7 +25,7 @@
       <ul class="tl_list">
         <li class="tl_item Project_card" v-for="(project,index) in projects" :key= "index" >
           <!-- Card -->
-          <div class="card card-dark" :class="[(project.Status ==='Online') ? card-online : card-offline]">
+          <div :class="[card,card-dark,{(project.Status ==='Online') ? card-online : card-offline}]">
             
             <!-- Card image -->
             <img class="card-img-top" :src="require('../assets/'+project.Image)" alt="Card image cap">
