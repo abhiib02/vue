@@ -13,8 +13,16 @@
                         
                         <h1 class="text-dark-cyan">About Me</h1>
                             
-                            <span class='text-white '>My name is Abhishek Bhardwaj and I am a <br><b class="text-dark-cyan">Website Designer and Developer</b>, i have made several websites and <router-link to="/work">projects</router-link> for me and for my company in which i worked and as freelancer too.<br> I also have a polytechnic diploma in <br><b class="text-dark-cyan">Electronics and Communication Engineering</b> which was completed in the year of 2017, i also have a Degree of <br><b class="text-dark-cyan">Bachelors of
-                            Computer Application</b> from IGNOU in the year of 2018, i am a tech enthusiast who want to know about new technologies but more interested in website development</b>As hobby i like to play video game and listening songs,</span>
+                            <span class='text-white '>My name is Abhishek Bhardwaj and I am a 
+                            <br><b class="text-dark-cyan">Website Designer and Developer</b>
+                            , i have made several websites and 
+                            <router-link to="/work">projects</router-link> for me and for my company in which i worked and as freelancer too.
+                            <br> I also have a polytechnic diploma in 
+                            <br><b class="text-dark-cyan">Electronics and Communication Engineering</b> 
+                            which was completed in the year of 2017, i also have a Degree of 
+                            <br><b class="text-dark-cyan">Bachelors of Computer Application</b>
+                            from IGNOU in the year of 2018, i am a tech enthusiast who want to know about new technologies but more interested in website development As hobby i like to play video game and listening songs,
+                            </span>
                     </div>
                    
                 </div>
