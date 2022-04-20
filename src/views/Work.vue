@@ -296,8 +296,8 @@ import Axios from 'axios'
       fullPath(image){
         return "../assets/"+image ;
       }, 
-      getStatusCode(url){
-                  Axios.get(url).then(() => {
+      async getStatusCode(url){
+                  await Axios.get(url).then(() => {
                       return 'Online';
                     }).catch(function (error) {
                                             if (error.response) {
