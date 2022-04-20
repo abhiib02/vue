@@ -297,7 +297,9 @@ import Axios from 'axios'
         return "../assets/"+image ;
       }, 
       async getStatusCode(url){
-                  await Axios.get(url).then(() => {
+                  await Axios.get(url,{
+                    withCredentials: true,
+                  }).then(() => {
                       return 'Online';
                     }).catch(function (error) {
                                             if (error.response) {
