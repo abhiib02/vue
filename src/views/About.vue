@@ -33,8 +33,8 @@ export default {
             imageUrl:'me.jpg'
         }
     },
-    /*mounted(){
-        Axios.get('https://www.instagram.com/abhiib02/?__a=1',{
+    mounted(){
+       /* Axios.get('https://www.instagram.com/abhiib02/?__a=1',{
             mode: 'no-cors',
             headers: {
                 'Access-Control-Allow-Origin': '*',
@@ -42,11 +42,18 @@ export default {
             }
         }).then((response)=>{
             this.imageUrl = response.data.graphql.user.profile_pic_url;
-        });
-        
+        });*/
+         const plugin = document.createElement("script");
+            plugin.setAttribute(
+            "src",
+            "https://platform.linkedin.com/badges/js/profile.js"
+            );
+            plugin.async = true;
+            document.head.appendChild(plugin);
+  }
 
-    }*/
-}
+    }
+
 </script>
 <style lang="scss" scoped>
   .icon-o {
