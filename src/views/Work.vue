@@ -88,11 +88,20 @@
     data() {
       return {
         projects: [
+          {
+            Name: 'Exhaustbaba.com',
+            Type: 'Bike Exhaust and Silencer Trader',
+            Tech: ['vuejs', 'css3', 'js'],
+            Image: 'eb.png',
+            Link: 'https://exhaustbaba.com/',
+            Status: 'Online',
+            Published : "Jun 2022"
+          },
         {
             Name: 'voyagersbeat.com',
             Type: 'Travel Website',
             Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'vb.jpg',
+            Image: 'vb.png',
             Link: 'https://voyagersbeat.com',
             Status: 'Online',
             Published : "Mar 2019 Redesigned 2022"
