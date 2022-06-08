@@ -105,7 +105,7 @@ h1{
     font-weight: bold;
 }
 .text-dark-cyan {
-    color: var(--cyan);
+    color: #0ee;
 }
 .fullvh{
   padding-top:10vh;
