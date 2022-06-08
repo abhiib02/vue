@@ -62,12 +62,8 @@ $bg-height: 50px;
          filter: hue-rotate(0deg);
        }
  
-       50% {
-         filter: hue-rotate(360deg);
-       }
- 
        100% {
-         filter: hue-rotate(0deg);
+         filter: hue-rotate(360deg);
        }
      }
 
@@ -98,7 +94,7 @@ $bg-height: 50px;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
- animation: animate 20s linear infinite;
+  animation: animate 20s linear infinite;
   
 }
 #nav {
