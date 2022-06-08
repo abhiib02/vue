@@ -57,15 +57,7 @@ $bg-height: 50px;
 @keyframes         bg-scrolling {
   0% { background-position: $bg-width $bg-height; }
 }
-@keyframes animate {
-       0% {
-         filter: hue-rotate(0deg);
-       }
- 
-       100% {
-         filter: hue-rotate(360deg);
-       }
-     }
+
 
 .page-enter-active, .page-leave-active {
   transition: opacity 1s, transform 1s;
@@ -94,7 +86,7 @@ $bg-height: 50px;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  animation: animate 20s linear infinite;
+  
   
 }
 #nav {
