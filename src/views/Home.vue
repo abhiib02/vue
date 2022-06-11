@@ -15,6 +15,7 @@
                         <div class="center-hor m-auto">
                        <router-link to="/contact" class="btn text-white btn-sm waves-effect cyan">Contact Me</router-link>
                        <router-link to="/work" class="btn btn-outline-cyan text-white btn-sm waves-effect cyan">Projects</router-link>
+                       <a  class="btn text-white btn-sm waves-effect cyan" href="../assets/logo.svg"> <i class="fa-solid fa-download"></i> Download Resume</a>
                     </div>
                     </div>
                
