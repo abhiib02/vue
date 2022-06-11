@@ -15,7 +15,7 @@
                         <div class="center-hor m-auto">
                        <router-link to="/contact" class="btn text-white btn-sm waves-effect cyan">Contact Me</router-link>
                        <router-link to="/work" class="btn btn-outline-cyan text-white btn-sm waves-effect cyan">Projects</router-link>
-                       <a class="btn btn-outline-cyan text-white btn-sm waves-effect cyan" href="../assets/logo.svg"> <i class="fas fa-download"></i> Download Resume</a>
+                       <a class="btn btn-outline-cyan text-white btn-sm waves-effect cyan" href="../assets/Resume_2022_Abhishek_Bhardwaj.pdf"> <i class="fas fa-download"></i> Download Resume</a>
                     </div>
                     </div>
                
