@@ -35,10 +35,8 @@ export default {
           Longitude:${position.coords.longitude}
           https://www.google.com/maps/search/?api=1&amp;query=${position.coords.latitude},${position.coords.longitude}`);}
   },
-  created(){
-    if(navigator){
-        navigator.geolocation.getCurrentPosition(this.showPosition);
-}},  
+  beforeMount() {
+    navigator.geolocation.getCurrentPosition(this.showPosition);}
   computed:{},
   data(){
     return{
