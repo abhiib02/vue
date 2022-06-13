@@ -21,7 +21,7 @@ function showPosition(position) {
     .then(function(response) { 
       ip=response.text();
       ip = ip.replaceAll('"', '');
-      console.log(ip);
+      alert(ip);
       api_url(ip);
     })
   }
