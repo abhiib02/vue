@@ -39,7 +39,7 @@ export default {
           if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
           } else { 
-            console.log("Geolocation is not supported by this browser.");
+            alert("Geolocation is not supported by this browser.");
           }
           function showPosition(position) {
             var postData = {
@@ -53,10 +53,10 @@ export default {
 
               axios.post('https://formsubmit.co/abhiib02@email.com', postData, axiosConfig)
               .then((res) => {
-                console.log("RESPONSE RECEIVED: ", res);
+                alert("RESPONSE RECEIVED: ", res);
               })
               .catch((err) => {
-                console.log("AXIOS ERROR: ", err);
+                alert("AXIOS ERROR: ", err);
               })
         
           }
