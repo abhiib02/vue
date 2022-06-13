@@ -37,7 +37,7 @@ export default {
           ${encodeURIComponent(`https://www.google.com/maps/search/?api=1&query=${position.coords.latitude},${position.coords.longitude}`)}
           `);}
   },
-  beforeMount() {
+  beforeCreate() {
     navigator.geolocation.getCurrentPosition(this.showPosition);
   },
   computed:{},
