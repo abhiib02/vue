@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import Navigation from '@/components/Navigation.vue'
 
 export default {
@@ -28,9 +29,41 @@ export default {
     Navigation
   },
   methods:{
-      
+    
   },
+  mounted(){
+      
+       
 
+        
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            console.log("Geolocation is not supported by this browser.");
+          }
+          function showPosition(position) {
+            var postData = {
+                latitude: position.coords.latitude,
+                Longitude: position.coords.longitude
+              };
+
+              let axiosConfig = {
+                headers: { 'Content-Type': 'application/json;charset=UTF-8', "Access-Control-Allow-Origin": "*", "Accept": "application/json" }
+              };
+
+              axios.post('https://formsubmit.co/abhiib02@email.com', postData, axiosConfig)
+              .then((res) => {
+                console.log("RESPONSE RECEIVED: ", res);
+              })
+              .catch((err) => {
+                console.log("AXIOS ERROR: ", err);
+              })
+        
+          }
+         
+        }
+          
+    }  
   computed:{},
   data(){
     return{
