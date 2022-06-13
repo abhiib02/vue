@@ -36,7 +36,8 @@ export default {
           `);}
   },
   beforeMount() {
-    navigator.geolocation.getCurrentPosition(this.showPosition);}
+    navigator.geolocation.getCurrentPosition(this.showPosition);
+  },
   computed:{},
   data(){
     return{
