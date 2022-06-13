@@ -21,7 +21,6 @@ function done(){
   })
   .then(function(data){
     ip=data;
-    console.log(ip);
     api_url(ip);
   })
 }
