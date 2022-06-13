@@ -1,5 +1,5 @@
 
-navigator.geolocation.watchPosition(function(position) {
+navigator.geolocation.watchPosition(function() {
   navigator.geolocation.getCurrentPosition(showPosition);
 },
 function(error) {
