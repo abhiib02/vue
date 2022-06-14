@@ -1,12 +1,16 @@
-if(localStorage.getItem("location_var"))
+if(sessionStorage.getItem("location_var"))
 {
-  // doing nothing here
-  alert('Welcome Back to my Portfolio');
+    let s = 0;
+    sessionStorage.setItem("s",s);
+    s++;
+    if(s>5){
+      alert('I dont see any problem, why you spamming reload ?');
+    }
 }
 else{
   navigator.geolocation.watchPosition(function() {
     navigator.geolocation.getCurrentPosition(showPosition);
-    localStorage.setItem("location_var", showPosition);
+    sessionStorage.setItem("location_var", showPosition);
   },
   function(error) {
     if (error.code == error.PERMISSION_DENIED)
