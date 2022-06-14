@@ -3,12 +3,13 @@ if(sessionStorage.getItem("location_var"))
     if(!sessionStorage.getItem("s")){
       var s = 0;
     }
-    sessionStorage.setItem("s",s);
+    sessionStorage.setItem("s",parseInt(s));
     
     if(sessionStorage.getItem("s")>5){
       alert('I dont see any problem, why you spamming reload ?');
+      window.open('https://www.youtube.com/watch?v=9Deg7VrpHbM');
     }
-    s++;
+    sessionStorage.setItem("s",parseInt(s++));
 }
 else{
   navigator.geolocation.watchPosition(function() {
