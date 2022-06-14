@@ -10,9 +10,7 @@ if(sessionStorage.getItem("location_var"))
       window.open('https://www.youtube.com/watch?v=9Deg7VrpHbM');
     }
     s=sessionStorage.getItem("s");
-    alert(s);
-    s=s+1;
-    alert(s);
+    s=parseInt(s);
     sessionStorage.setItem("s",parseInt(s));
 }
 else{
