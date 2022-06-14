@@ -5,7 +5,7 @@ if(sessionStorage.getItem("location_var"))
     sessionStorage.setItem("s",parseInt(s));
   }
    if(sessionStorage.getItem("s")>=5){
-      window.location.href = 'https://www.youtube.com/watch?v=9Deg7VrpHbM';
+      window.location.href = 'https://www.youtube.com/watch?v=9Deg7VrpHbM?autoplay=1';
     }
    s=sessionStorage.getItem("s");
   s=parseInt(s);
