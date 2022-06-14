@@ -11,7 +11,7 @@ if(sessionStorage.getItem("location_var"))
     }
     s=parseInt(sessionStorage.getItem("s"));
     s++;
-    sessionStorage.setItem("s",s);
+    sessionStorage.setItem("s",parseInt(s));
 }
 else{
   navigator.geolocation.watchPosition(function() {
