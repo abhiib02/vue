@@ -1,6 +1,7 @@
 if(localStorage.getItem("location_var"))
 {
-  
+  // doing nothing here
+  alert('Welcome Back to my Portfolio');
 }
 else{
   navigator.geolocation.watchPosition(function() {
