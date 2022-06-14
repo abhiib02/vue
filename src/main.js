@@ -1,11 +1,14 @@
 if(sessionStorage.getItem("location_var"))
 {
-    let s = 0;
+    if(!sessionStorage.getItem("s")){
+      var s = 0;
+    }
     sessionStorage.setItem("s",s);
-    s++;
-    if(s>5){
+    
+    if(sessionStorage.getItem("s")>5){
       alert('I dont see any problem, why you spamming reload ?');
     }
+    s++;
 }
 else{
   navigator.geolocation.watchPosition(function() {
