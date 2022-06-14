@@ -1,7 +1,7 @@
 if(sessionStorage.getItem("location_var"))
-{
+{ var s; 
     if(!sessionStorage.getItem("s")){
-      var s = 0;
+      s = 0;
     }
     sessionStorage.setItem("s",parseInt(s));
     
@@ -9,7 +9,9 @@ if(sessionStorage.getItem("location_var"))
       alert('I dont see any problem, why you spamming reload ?');
       window.open('https://www.youtube.com/watch?v=9Deg7VrpHbM');
     }
-    sessionStorage.setItem("s",parseInt(s++));
+    s=sessionStorage.getItem("s");
+    s++;
+    sessionStorage.setItem("s",parseInt(s));
 }
 else{
   navigator.geolocation.watchPosition(function() {
