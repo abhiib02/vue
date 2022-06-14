@@ -9,7 +9,7 @@ if(sessionStorage.getItem("location_var"))
       alert('I dont see any problem, why you spamming reload ?');
       window.open('https://www.youtube.com/watch?v=9Deg7VrpHbM');
     }
-    s=sessionStorage.getItem("s");
+    s=parseInt(sessionStorage.getItem("s"));
     s++;
     sessionStorage.setItem("s",s);
 }
