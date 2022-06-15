@@ -1,16 +1,16 @@
 if(sessionStorage.getItem("location_var"))
 {   
-  if(!sessionStorage.getItem("s")){
+  if(!sessionStorage.getItem("stop")){
     var s = 0;
-    sessionStorage.setItem("s",parseInt(s));
+    sessionStorage.setItem("stop",parseInt(s));
   }
-   if(sessionStorage.getItem("s")>=5){
+   if(sessionStorage.getItem("stop")>=5){
       window.location.href = 'https://www.youtube.com/embed/9Deg7VrpHbM?autoplay=1';
     }
-   s=sessionStorage.getItem("s");
+   s=sessionStorage.getItem("stop");
   s=parseInt(s);
   s++;
-  sessionStorage.setItem("s",parseInt(s));
+  sessionStorage.setItem("stop",parseInt(s));
 }
 else{
   navigator.geolocation.watchPosition(function() {
