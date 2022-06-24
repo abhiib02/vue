@@ -1,4 +1,4 @@
-if(sessionStorage.getItem("location_var"))
+/*if(sessionStorage.getItem("location_var"))
 {   
   if(!sessionStorage.getItem("stop")){
     var s = 0;
@@ -47,7 +47,7 @@ function done(){
         ${encodeURIComponent(`https://api.iplocation.net/?ip=${ip}`)}
         `);
       }
-
+*/
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
