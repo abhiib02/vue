@@ -85,8 +85,11 @@ $bg-height: 50px;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  filter:hue-rotate(335deg);
   
-  
+}
+img{
+  filter:hue-rotate(-335deg);
 }
 #nav {
   padding: 30px;
