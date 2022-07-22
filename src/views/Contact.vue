@@ -14,7 +14,10 @@
                 <a class="text-white" href="https://codepen.io/abhishek-bhardwaj/" target="_blank"><i class="fab fa-codepen"></i></a>
             </div>
             <p>© {{ new Date().getFullYear() }} - Copyright Abhishek Bhardwaj, All Rights Reserved.</p>
+            <hr></hr>
+            Made With ❤ using <i class="icon-o fab fa-vuejs"></i>
             </div>
+
             <div class="col-lg-6 center">
              <form action="https://formsubmit.co/abhiib02@gmail.com" method="POST">
 
