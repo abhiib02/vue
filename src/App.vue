@@ -104,7 +104,7 @@ h1{
     font-weight: bold;
 }
 .text-dark-cyan {
-    color: #42b883;
+    color: #0ff;
 }
 .fullvh{
   padding-top:10vh;
@@ -133,11 +133,11 @@ h1{
   flex-direction: column;
 }
 .text-shadow {
-    text-shadow: 0px 0px 3px #42b883;
+    text-shadow: 0px 0px 3px #0ff;
     ;
 }
 .box-shadow {
-    box-shadow: 0px 0px 3px #42b883;
+    box-shadow: 0px 0px 3px #0ff;
     ;
 }
 .circle{
@@ -170,11 +170,11 @@ h1{
   .brdr-btm{
     outline:0px !important;
     border:0px !important;
-    border-bottom:2px #42b883 solid !important;
+    border-bottom:2px #0ff solid !important;
     transition: all .2s ease-in;
   }
   .brdr-btm:focus{
-    border-bottom:10px #42b883 solid !important;
+    border-bottom:10px #0ff solid !important;
   }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
