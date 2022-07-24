@@ -27,14 +27,14 @@
     <!-- Name -->
     <input type="hidden" name="_subject" value="Query From Portfolio">
     <input type="text" name="_honey" style="display:none">
-    <input type="text" id="Name" name="name" class=" bg-transparent text-light  brdr-btm" placeholder="Name" style="width:100%;">
+    <input type="text" autocomplete="off" id="Name" name="name" class=" bg-transparent text-light  brdr-btm" placeholder="Name" style="width:100%;">
     <input type="hidden" name="_next" value="https://bhardwaj.netlify.app/#/thanks">
     <!-- Email -->
-    <input type="email" id="Email" name="email" class=" bg-transparent  text-light mt-4 brdr-btm" placeholder="E-mail" style="width:100%;">
+    <input type="email" autocomplete="off" id="Email" name="email" class=" bg-transparent  text-light mt-4 brdr-btm" placeholder="E-mail" style="width:100%;">
 
     <!-- Message -->
     <div class="form-group">
-        <textarea name="message" class=" rounded-0  bg-transparent text-light mt-4 brdr-btm" id="Message" rows="3" placeholder="Message" style="width:100%;"></textarea>
+        <textarea  autocomplete="off" name="message" class=" rounded-0  bg-transparent text-light mt-4 brdr-btm" id="Message" rows="3" placeholder="Message" style="width:100%;"></textarea>
     </div>
     <!-- Send button -->
     <button class="btn btn-info btn-block" type="submit">Send</button>
