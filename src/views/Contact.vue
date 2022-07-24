@@ -12,6 +12,7 @@
                 <a class="text-white" href="https://dynamohack.blogspot.com/" target="_blank"><i class="fab fa-blogger"></i></a>
                 <a class="text-white" href="https://www.instagram.com/abhiib02/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a class="text-white" href="https://codepen.io/abhishek-bhardwaj/" target="_blank"><i class="fab fa-codepen"></i></a>
+                <a class="text-white" href="https://github.com/abhiib02" target="_blank"><i class="fab fa-github"></i></a>
             </div>
             <p>© {{ new Date().getFullYear() }} - Copyright Abhishek Bhardwaj, All Rights Reserved.</p>
             
