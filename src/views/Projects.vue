@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <button @click="prevBtn" class="btn prevBtn">◄</button>
     <button @click="nextBtn" class="btn nextBtn">►</button>
     <div class="carousalContainer">
@@ -354,9 +354,13 @@ body {
   flex-wrap: wrap;
   justify-content: start;
   .thumbnail {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: 2px solid grey;
+    img{
+        width:100%;
+        height:100%;
+    }
   }
 }
 .heading {
