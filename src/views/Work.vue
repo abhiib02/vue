@@ -1,6 +1,6 @@
 <template>
 
-<!--  <div class="work fullvh ">
+  <div class="work fullvh ">
     <div class="container">
       <div class="row ">
 
@@ -24,20 +24,20 @@
       
       <ul class="tl_list">
         <li class="tl_item Project_card" v-for="(project,index) in projects" :key= "index" >
-          
+          <!-- Card -->
           <div :class="[(project.Status ==='Online') ? 'card-online' : 'card-offline' , 'card' , 'card-dark']">
             
-            
+            <!-- Card image -->
             <img class="card-img-top" :src="require('../assets/'+project.Image)" alt="Card image cap">
 
-            
+            <!-- Card content -->
             <div class="card-body">
 
-              
+              <!-- Title -->
               <h5 class="card-title"><a>{{project.Name}}</a>
               <hr>
               </h5>
-              
+              <!-- Text -->
               <p class="card-text">{{project.Type}}</p>
               
               <ul class="tech_list">
@@ -60,7 +60,7 @@
               <div class="pos-rb">
                 <b>{{project.Published}}</b>                
               </div>
-               Button 
+              <!-- Button -->
               <a :href="project.Link" target="_blank" class="btn btn-outline-cyan text-white btn-sm waves-effect cyan">Visit</a>
 
             </div>
@@ -71,10 +71,10 @@
     </div>
         </div>
       </div>
-    </div>-->
-    <Carousel :projects="projects"></Carousel>
-
+    </div>
+    
   </div>
+
 
 
 
@@ -83,12 +83,8 @@
 
 </template>
 <script>
-import Carousel from '@/components/Carousel.vue';
 
   export default {
-    components:{
-    Carousel
-  },
     data() {
       return {
         projects: [
@@ -236,6 +232,7 @@ import Carousel from '@/components/Carousel.vue';
             Status: 'Online',
             Published : "Sep 2019"
           },
+          
           {
             Name: 'woodcraftint.com',
             Type: 'Interior Designing Company Website',
@@ -300,57 +297,7 @@ import Carousel from '@/components/Carousel.vue';
             Status: 'Online',
             Published : "Aug 2013"
           }
-        ],
-        carousalImages: [
-        {
-          image:
-            "https://images.unsplash.com/photo-1606945094026-f93bf0b75ee0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
-          captionText: "Caption 1",
-          subCaption: "lorem ipsume dolor polor asdaasdasdasd dwqdacads",
-        },
-        {
-          image:
-            "https://images.unsplash.com/photo-1606922619208-e0a4227607f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80",
-          captionText: "Caption 2",
-          subCaption: "lorem ipsume dolor polor asdaasdasdasd dwqdacads",
-        },
-        {
-          image:
-            "https://images.unsplash.com/photo-1601758176559-76c75ead317a?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
-          captionText: "Caption 3",
-          subCaption: "lorem ipsume dolor polor asdaasdasdasd dwqdacads",
-        },
-        {
-          image:
-            "https://images.unsplash.com/photo-1606922722933-550af9f7e4de?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
-          captionText: "Caption 4",
-          subCaption: "lorem ipsume dolor polor asdaasdasdasd dwqdacads",
-        },
-        {
-          image:
-            "https://images.unsplash.com/photo-1606854385394-14d09ac9e14e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-          captionText: "Caption 5",
-          subCaption: "lorem ipsume dolor polor asdaasdasdasd dwqdacads",
-        },
-        {
-          image:
-            "https://images.unsplash.com/photo-1606895213457-36798be25021?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
-          captionText: "Caption 6",
-          subCaption: "lorem ipsume dolor polor asdaasdasdasd dwqdacads",
-        },
-        {
-          image:
-            "https://images.unsplash.com/photo-1606825488982-e468cab54f26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
-          captionText: "Caption 7",
-          subCaption: "lorem ipsume dolor polor asdaasdasdasd dwqdacads",
-        },
-        {
-          image:
-            "https://images.unsplash.com/photo-1606902965483-3dcbb360cca5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
-          captionText: "Caption 8",
-          subCaption: "lorem ipsume dolor polor asdaasdasdasd dwqdacads",
-        },
-      ],
+        ]
       }
     }
     ,

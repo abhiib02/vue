@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div>
     <button @click="prevBtn" class="btn-c prevBtn">◄</button>
     <button @click="nextBtn" class="btn-c nextBtn">►</button>
@@ -125,4 +125,4 @@ export default {
     },
   },
 };
-</script>
+</script>-->
