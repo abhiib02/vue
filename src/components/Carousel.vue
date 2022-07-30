@@ -10,10 +10,10 @@
           animate__zoomInDown: active,
           animate__zoomOutDown: active2,
         }"
-        :src="this.carousalImages[this.count].image"
+        :src="this.projects[this.count].Image"
         alt=""
       />
-
+    <div>
       <h1
         :class="{
           heading: true,
@@ -22,8 +22,16 @@
           animate__lightSpeedOutLeft: active2,
         }"
       >
-        {{ carousalImages[this.count].captionText }}
+        {{ projects[this.count].Name }}
       </h1>
+        <span>{{projects[this.count].Type}}</span>
+        <ul style="list-style-type:none;display:flex; flex-direction:row;">
+            <li v-for="item in projects[this.count].Tech">
+            <i :class="'icon-o fab fa-'+item"></i>
+            </li>
+            </ul>
+        <span>{{projects[this.count].Status}}</span>
+        <span>{{projects[this.count].Published}}</span>
       <p
         :class="{
           animate__animated: true,
@@ -32,15 +40,16 @@
           animate__fadeOut: active2,
         }"
       >
-        {{ carousalImages[this.count].subCaption }}
+        {{ projects[this.count].Link }}
       </p>
+      </div>
       <ul class="horz_thumb_list">
         <li
-          v-for="(item, index) in carousalImages"
+          v-for="(item, index) in projects"
           v-bind:key="index"
           class="thumbnail"
         >
-          <img :src="item.image" @click="changeCount(index)" />
+          <img :src="item.Image" @click="changeCount(index)" />
         </li>
       </ul>
     </div>
@@ -49,7 +58,7 @@
 <script>
 export default {
   props: {
-    carousalImages: Array,
+    projects: Array,
     autoplay: Boolean,
   },
 
@@ -78,7 +87,7 @@ export default {
       if (this.autoplay) {
         this.active2 = !this.active2;
         setTimeout(() => {
-          if (this.count > this.carousalImages.length - 2) {
+          if (this.count > this.projects.length - 2) {
             this.count = 0;
           } else {
             this.count += 1;
@@ -93,7 +102,7 @@ export default {
       setTimeout(() => {
         this.active2 = false;
         if (this.count < 1) {
-          this.count = this.carousalImages.length - 1;
+          this.count = this.projects.length - 1;
         } else {
           this.count--;
         }
@@ -105,7 +114,7 @@ export default {
       this.active2 = true;
       setTimeout(() => {
         this.active2 = false;
-        if (this.count > this.carousalImages.length - 2) {
+        if (this.count > this.projects.length - 2) {
           this.count = 0;
         } else {
           this.count++;
@@ -144,7 +153,7 @@ body {
   }
 }
 .heading {
-  font-size: 56px;
+  font-size: 3em;
 }
 .dots {
   display: flex;
@@ -173,15 +182,15 @@ body {
 
 .carousalContainer {
   img {
-    width: 100%;
-    height: 350px;
+    width: auto;
+    height: 100%;
     object-fit: cover;
   }
-  h1 {
+  div {
     color: #fff;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 40%;
     //transform: translate(-50%, -50%);
   }
 }

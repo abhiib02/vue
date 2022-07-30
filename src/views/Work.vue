@@ -72,7 +72,7 @@
         </div>
       </div>
     </div>
-    <Carousel :carousalImages="carousalImages"></Carousel>
+    <Carousel :projects="projects"></Carousel>
 
   </div>
 
