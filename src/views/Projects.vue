@@ -59,7 +59,7 @@
 <script>
 export default {
   props: {
-    projects: Array,
+    data_projects: Array,
     autoplay: Boolean,
   },
 
