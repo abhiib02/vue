@@ -26,7 +26,7 @@
       </h1>
         <span>{{projects[this.count].Type}}</span>
         <ul style="list-style-type:none;display:flex; flex-direction:row;">
-            <li v-for="item in projects[this.count].Tech">
+            <li v-for="item,index in projects[this.count].Tech :key=index">
             <i :class="'icon-o fab fa-'+item"></i>
             </li>
             </ul>
