@@ -2,6 +2,7 @@
 
   <div class="work fullvh ">
     <div class="container">
+      <Carousel :projects="projects"></Carousel>
       <!--<div class="row ">
 
         <div class="col-lg-5 relative text-left  text-dark-cyan">
@@ -71,7 +72,7 @@
     </div>
         </div>
       </div>-->
-      <Carousel :projects="projects"></Carousel>
+      
     </div>
     
   </div>
