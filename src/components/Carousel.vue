@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button @click="prevBtn" class="btn prevBtn">◄</button>
-    <button @click="nextBtn" class="btn nextBtn">►</button>
+    <button @click="prevBtn" class="btn-c prevBtn">◄</button>
+    <button @click="nextBtn" class="btn-c nextBtn">►</button>
     <div class="carousalContainer">
       <img
         :class="{
@@ -204,7 +204,7 @@ body {
 .nextBtn {
   right: 10%;
 }
-.btn {
+.btn-c {
   position: absolute;
   top: 80%;
   width: 50px;
