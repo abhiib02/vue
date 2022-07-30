@@ -72,14 +72,14 @@
         </div>
       </div>
     </div>
-    
+    <Carousel :carousalImages="carousalImages"></Carousel>
+
   </div>
 
 
 
 
 
-<Carousel :carousalImages="carousalImages"></Carousel>
 
 </template>
 <script>
