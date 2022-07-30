@@ -72,7 +72,7 @@
         </div>
       </div>
     </div>
-    
+    <Carousel :projects="projects"></Carousel>
   </div>
 
 
@@ -83,8 +83,11 @@
 
 </template>
 <script>
-
+import Carousel from "@/components/Carousel.vue"
   export default {
+    components:{
+    Carousel
+  },
     data() {
       return {
         projects: [
