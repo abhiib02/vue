@@ -2,8 +2,75 @@
 
   <div class="work fullvh ">
     <div class="container">
-      <Carousel :projects="projects"></Carousel>
+      <div class="row ">
+
+        <div class="col-lg-5 relative text-left  text-dark-cyan">
+            <div class="sticky">
+             <h1 class="text-dark-cyan">Work</h1>
+          
+
+
+
+             <span class='text-white  '>
+              These are some projects that i have made using the technologies i am familier with,
+              the most common is HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP, CODEIGNITER, LARAVEL
+            </span>
+          
+  </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6">
+            <div class="container">
       
+      <ul class="tl_list">
+        <li class="tl_item Project_card" v-for="(project,index) in projects" :key= "index" >
+          <!-- Card -->
+          <div :class="[(project.Status ==='Online') ? 'card-online' : 'card-offline' , 'card' , 'card-dark']">
+            
+            <!-- Card image -->
+            <img class="card-img-top" :src="require('../assets/'+project.Image)" alt="Card image cap">
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h5 class="card-title"><a>{{project.Name}}</a>
+              <hr>
+              </h5>
+              <!-- Text -->
+              <p class="card-text">{{project.Type}}</p>
+              
+              <ul class="tech_list">
+                <li class="tech_item" v-for="(tech,index) in project.Tech" :key="index">
+                  <i :class="'icon-o fab fa-'+tech"></i>
+                  
+                </li>
+              </ul>
+              <div class="pos-lb">
+                
+                <span v-if="project.Status == 'Online'" class="badge badge-success">
+                  
+                </span>
+
+                <span  v-if="project.Status == 'Offline'" class="badge badge-danger">
+                  
+                </span>
+                
+              </div>
+              <div class="pos-rb">
+                <b>{{project.Published}}</b>                
+              </div>
+              <!-- Button -->
+              <a :href="project.Link" target="_blank" class="btn btn-outline-cyan text-white btn-sm waves-effect cyan">Visit</a>
+
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+        </div>
+      </div>
     </div>
     
   </div>
@@ -16,11 +83,8 @@
 
 </template>
 <script>
-import Carousel from "@/components/Carousel.vue"
+
   export default {
-    components:{
-    Carousel
-  },
     data() {
       return {
         projects: [
