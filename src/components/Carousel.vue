@@ -194,7 +194,6 @@ body {
     //transform: translate(-50%, -50%);
   }
 }
-
 .no-show {
   display: none;
 }
@@ -203,18 +202,5 @@ body {
 }
 .nextBtn {
   right: 10%;
-}
-.btn-c {
-  position: absolute;
-  top: 80%;
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
-  border-radius: 50%;
-  display: flex;
-  background: white;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease;
 }
 </style>
