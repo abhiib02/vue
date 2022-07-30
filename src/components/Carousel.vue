@@ -216,8 +216,6 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
-  &:hover {
-    filter: invert(1);
-  }
+  
 }
 </style>
