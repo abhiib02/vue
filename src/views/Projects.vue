@@ -10,7 +10,7 @@
           animate__zoomInDown: active,
           animate__zoomOutDown: active2,
         }"
-        :src="this.projects[this.count].Image"
+        :src="require('../assets/'+this.projects[this.count].Image)"
         alt=""
       />
       <div>
@@ -50,7 +50,7 @@
           v-bind:key="index"
           class="thumbnail"
         >
-          <img :src="item.Image" @click="changeCount(index)" />
+          <img :src="require('../assets/'+item.Image)" @click="changeCount(index)" />
         </li>
       </ul>
     </div>
