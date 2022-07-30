@@ -1,6 +1,6 @@
 <template>
 
-  <div class="work fullvh ">
+<!--  <div class="work fullvh ">
     <div class="container">
       <div class="row ">
 
@@ -24,20 +24,20 @@
       
       <ul class="tl_list">
         <li class="tl_item Project_card" v-for="(project,index) in projects" :key= "index" >
-          <!-- Card -->
+          
           <div :class="[(project.Status ==='Online') ? 'card-online' : 'card-offline' , 'card' , 'card-dark']">
             
-            <!-- Card image -->
+            
             <img class="card-img-top" :src="require('../assets/'+project.Image)" alt="Card image cap">
 
-            <!-- Card content -->
+            
             <div class="card-body">
 
-              <!-- Title -->
+              
               <h5 class="card-title"><a>{{project.Name}}</a>
               <hr>
               </h5>
-              <!-- Text -->
+              
               <p class="card-text">{{project.Type}}</p>
               
               <ul class="tech_list">
@@ -60,7 +60,7 @@
               <div class="pos-rb">
                 <b>{{project.Published}}</b>                
               </div>
-              <!-- Button -->
+               Button 
               <a :href="project.Link" target="_blank" class="btn btn-outline-cyan text-white btn-sm waves-effect cyan">Visit</a>
 
             </div>
@@ -71,7 +71,7 @@
     </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <Carousel :projects="projects"></Carousel>
 
   </div>
@@ -236,7 +236,6 @@ import Carousel from '@/components/Carousel.vue';
             Status: 'Online',
             Published : "Sep 2019"
           },
-          
           {
             Name: 'woodcraftint.com',
             Type: 'Interior Designing Company Website',
