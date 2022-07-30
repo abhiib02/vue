@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Skills from '../views/Skills.vue'
 import Work from '../views/Work.vue'
+import Projects from '../views/Projects.vue'
 import Hobbies from '../views/Hobbies.vue'
 import Contact from '../views/Contact.vue'
 import Thanks from '../views/Thanks.vue'
@@ -34,6 +35,11 @@ const routes = [{
         path: '/work',
         name: 'work',
         component: Work
+    },
+    {
+        path: '/projects',
+        name: 'projects',
+        component: Projects
     },
     {
         path: '/hobbies',
