@@ -24,7 +24,7 @@
 
                 </div>
                 <div class="col-sm-6 center hide-on-mobile">
-                    <img class="logo-main" @mousemove="mouseinvert($event)"  :style="dropshades" src="../assets/logo.svg" alt="">
+                    <img class="logo-main" ref="logo" @mousemove="mouseinvert($event)"  :style="dropshades" src="../assets/logo.svg" alt="">
                 </div>
             </div>
         </div>
@@ -41,8 +41,8 @@ export default {
     methods:{
         mouseinvert(event){
             var x3d,y3d;
-            x3d = -(event.clientX-window.innerWidth * 0.5)* 0.1;
-            y3d = -(event.clientY-window.innerHeight * 0.5)* 0.1;
+            x3d = -(event.clientX-this.$refs.logo.clientWidth * 0.5)* 0.1;
+            y3d = -(event.clientY-this.$refs.logo.clientHeight * 0.5)* 0.1;
             this.x = x3d;
             this.y = y3d;
         }
