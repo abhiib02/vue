@@ -56,8 +56,8 @@ export default {
             this.y = -y3d;
         },
         reset(){
-            this.x ='';
-            this.y = '';
+            this.x = 0;
+            this.y = 0;
         }
     },
     computed:{
