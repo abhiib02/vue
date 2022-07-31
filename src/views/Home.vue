@@ -23,7 +23,7 @@
                     
 
                 </div>
-                <div class="col-sm-6 center hide-on-mobile" @mousemove="mouseinvert($event)">
+                <div class="col-sm-6 center hide-on-mobile">
                     <img class="logo-main" @mousemove="mouseinvert($event)"  :style="dropshades" src="../assets/logo.svg" alt="">
                 </div>
             </div>
