@@ -55,7 +55,7 @@ export default {
     },
     computed:{
         dropshades(){
-            return `
+            return (`
           filter:drop-shadow(${this.x}px ${this.y}px 1px rgba(${this.x} * 2},${this.y} * 2},${this.x * this.y * 2})) 
           drop-shadow(${this.x}px ${this.y}px 0px rgba(${this.x} * 4},${this.y} * 3},${this.x * this.y * 3})) 
           drop-shadow(${this.x}px ${this.y}px 0px rgba(${this.x} * 6},${this.y} * 4},${this.x * this.y * 4})) 
@@ -63,7 +63,7 @@ export default {
           drop-shadow(${this.x}px ${this.y}px 0px rgba(${this.x} * 10},${this.y} * 6},${this.x * this.y * 6})) 
           drop-shadow(${this.x}px ${this.y}px 0px rgba(${this.x} * 12},${this.y} * 7},${this.x * this.y * 7})) 
           drop-shadow(${this.x}px ${this.y}px 0px rgba(${this.x} * 14},${this.y} * 8},${this.x * this.y * 8})) 
-          drop-shadow(${this.x}px ${this.y}px 0px rgba(${this.x} * 16},${this.y} * 9},${this.x * this.y * 9}));`;
+          drop-shadow(${this.x}px ${this.y}px 0px rgba(${this.x} * 16},${this.y} * 9},${this.x * this.y * 9}));`);
         }
     }
 }
