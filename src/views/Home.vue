@@ -41,10 +41,8 @@ export default {
     methods:{
         mouseinvert(event){
             var x3d,y3d;
-            x3d = event.clientX-(window.innerWidth * 0.5);
-            y3d = event.clientY-(window.innerHeight * 0.5);
-            x3d = x3d * 0.1;
-            y3d = y3d * 0.1;
+            x3d = -(event.clientX-window.innerWidth * 0.5)* 0.1;
+            y3d = -(event.clientY-window.innerHeight * 0.5)* 0.1;
             this.x = x3d;
             this.y = y3d;
         }
