@@ -24,7 +24,7 @@
 
                 </div>
                 <div class="col-sm-6 center hide-on-mobile" @mouseleave="{this.active=false;}"  @mousemove="mouseinvert($event)" >
-                    <img class="logo-main" ref="logo" v-bind:style="{dropshades}" src="../assets/logo.svg" alt="">
+                    <img class="logo-main" ref="logo"  v-bind:style="{dropshades} " style="filter:none;" src="../assets/logo.svg" alt="">
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ h1{
     font-weight: bold;
 }
 .logo-main{
-    filter:none;
+    
 }
 </style>
 <template>
