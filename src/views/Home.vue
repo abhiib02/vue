@@ -24,7 +24,7 @@
 
                 </div>
                 <div class="col-sm-6 center hide-on-mobile" @mouseleave="{this.active=false;}"  @mousemove="mouseinvert($event)" >
-                    <img class="logo-main" ref="logo" v-bind:style="[active ? {dropshades} : {!dropshades}]" src="../assets/logo.svg" alt="">
+                    <img class="logo-main" ref="logo" v-bind:style="{dropshades}" src="../assets/logo.svg" alt="">
                 </div>
             </div>
         </div>
@@ -61,8 +61,8 @@ export default {
     },
     computed:{
         dropshades(){
-         
-return ('filter:drop-shadow('+this.x+'px '+this.y+'px 1px rgba('+this.x * 2+','+this.y * 2+','+this.x * this.y * 2+'))'+
+         if(this.active){
+    return ('filter:drop-shadow('+this.x+'px '+this.y+'px 1px rgba('+this.x * 2+','+this.y * 2+','+this.x * this.y * 2+'))'+
           'drop-shadow('+this.x+'px '+this.y+'px 0px rgba('+this.x * 4+','+this.y * 3+','+this.x * this.y * 3+'))'+
           'drop-shadow('+this.x+'px '+this.y+'px 0px rgba('+this.x * 6+','+this.y * 4+','+this.x * this.y * 4+'))'+
           'drop-shadow('+this.x+'px '+this.y+'px 0px rgba('+this.x * 8+','+this.y * 5+','+this.x * this.y * 5+'))'+
@@ -70,6 +70,12 @@ return ('filter:drop-shadow('+this.x+'px '+this.y+'px 1px rgba('+this.x * 2+','+
           'drop-shadow('+this.x+'px '+this.y+'px 0px rgba('+this.x * 12+','+this.y * 7+','+this.x * this.y * 7+'))'+
           'drop-shadow('+this.x+'px '+this.y+'px 0px rgba('+this.x * 14+','+this.y * 8+','+this.x * this.y * 8+'))'+
           'drop-shadow('+this.x+'px '+this.y+'px 0px rgba('+this.x * 16+','+this.y * 9+','+this.x * this.y * 9+'))');
+         }
+         else{
+            return ('filter:')
+         }
+
+            
         }
     }
 }
