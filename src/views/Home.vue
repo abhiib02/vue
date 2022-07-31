@@ -37,7 +37,7 @@ export default {
             x:'',
             y:''
         }
-    }
+    },
     methods:{
         mouseinvert(event){
             var x3d,y3d;
