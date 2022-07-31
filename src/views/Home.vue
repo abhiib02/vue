@@ -24,7 +24,7 @@
 
                 </div>
                 <div class="col-sm-6 center hide-on-mobile" @mousemove="mouseinvert($event)">
-                    <img class="logo-main"  v-bind:style="dropshades" src="../assets/logo.svg" alt="">
+                    <img class="logo-main" @mousemove="mouseinvert($event)"  :style="dropshades" src="../assets/logo.svg" alt="">
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@ export default {
     computed:{
         dropshades(){
             return (
-          'drop-shadow('+this.x+'px '+this.y+'px 1px rgba('+this.x * 2+','+this.y * 2+','+this.x * this.y * 2+'))'+
+          'filter:drop-shadow('+this.x+'px '+this.y+'px 1px rgba('+this.x * 2+','+this.y * 2+','+this.x * this.y * 2+'))'+
           'drop-shadow('+this.x+'px '+this.y+'px 0px rgba('+this.x * 4+','+this.y * 3+','+this.x * this.y * 3+'))'+
           'drop-shadow('+this.x+'px '+this.y+'px 0px rgba('+this.x * 6+','+this.y * 4+','+this.x * this.y * 4+'))'+
           'drop-shadow('+this.x+'px '+this.y+'px 0px rgba('+this.x * 8+','+this.y * 5+','+this.x * this.y * 5+'))'+
