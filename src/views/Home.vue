@@ -38,7 +38,7 @@ export default {
             y:'',
             w:'',
             h:'',
-            active:false;
+            active:false
         }
     },
     mounted() {
