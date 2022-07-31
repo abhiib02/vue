@@ -23,8 +23,8 @@
                     
 
                 </div>
-                <div class="col-sm-6 center hide-on-mobile" @mouseleave="reset()"  @mousemove="mouseinvert($event)" >
-                    <img class="logo-main" ref="logo" v-bind:style="dropshades" src="../assets/logo.svg" alt="">
+                <div class="col-sm-6 center hide-on-mobile" @mouseleave="{this.active=false;}"  @mousemove="mouseinvert($event)" >
+                    <img class="logo-main" ref="logo" v-bind:style="{active ? dropshades : ''}" src="../assets/logo.svg" alt="">
                 </div>
             </div>
         </div>
@@ -38,6 +38,7 @@ export default {
             y:'',
             w:'',
             h:'',
+            active:false;
         }
     },
     mounted() {
@@ -54,6 +55,7 @@ export default {
             y3d = y3d * 0.1;
             this.x = -x3d;
             this.y = -y3d;
+            this.active=true;
         },
         
     },
