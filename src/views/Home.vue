@@ -23,7 +23,7 @@
                     
 
                 </div>
-                <div class="col-sm-6 center hide-on-mobile"   @mousemove="mouseinvert($event)" >
+                <div class="col-sm-6 center hide-on-mobile" @mouseleave="reset()"  @mousemove="mouseinvert($event)" >
                     <img class="logo-main" ref="logo" v-bind:style="dropshades" src="../assets/logo.svg" alt="">
                 </div>
             </div>
@@ -129,6 +129,10 @@ export default {
             y3d = y3d * 0.1;
             this.x = x3d;
             this.y = y3d;
+        },
+        reset(){
+            this.x = '';
+            this.y = '';
         }
     },
     computed:{
