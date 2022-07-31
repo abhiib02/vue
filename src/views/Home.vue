@@ -23,8 +23,8 @@
                     
 
                 </div>
-                <div class="col-sm-6 center hide-on-mobile"  >
-                    <img class="logo-main" ref="logo" @mousemove="mouseinvert($event)" @mouseleave="reset()" v-bind:style="dropshades" src="../assets/logo.svg" alt="">
+                <div class="col-sm-6 center hide-on-mobile"   @mousemove="mouseinvert($event)" >
+                    <img class="logo-main" ref="logo" v-bind:style="dropshades" src="../assets/logo.svg" alt="">
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@ export default {
         mouseinvert(event){
             var x3d,y3d;
             x3d = event.clientX-(this.$refs.logo.clientWidth * 0.5);
-            y3d = event.clientY-(this.$refs.logo.clientWidth * 0.5);
+            y3d = event.clientY-(this.$refs.logo.clientHeight * 0.5);
             x3d = x3d * 0.1;
             y3d = y3d * 0.1;
             this.x = -x3d;
