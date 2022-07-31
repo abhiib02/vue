@@ -24,7 +24,7 @@
 
                 </div>
                 <div class="col-sm-6 center hide-on-mobile">
-                    <img class="logo-main" v-bind:style="dropshades" src="../assets/logo.svg" alt="">
+                    <img class="logo-main" @mousemove="mouseinvert($event)" v-bind:style="dropshades" src="../assets/logo.svg" alt="">
                 </div>
             </div>
         </div>
