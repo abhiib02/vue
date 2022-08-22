@@ -90,7 +90,7 @@
         projects: [
           {
             Name: 'Youtube Thumbnail Downloader',
-            Type: 'Extension',
+            Type: 'Browser Extension',
             Tech: ['js'],
             Image: 'ytd.png',
             Link: '#',
