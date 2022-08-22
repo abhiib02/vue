@@ -89,6 +89,15 @@
       return {
         projects: [
           {
+            Name: 'Youtube Thumbnail Downloader',
+            Type: 'Extension',
+            Tech: ['js'],
+            Image: 'ytd.png',
+            Link: '#',
+            Status: 'Online',
+            Published : "Aug 2022"
+          },
+          {
             Name: 'Exhaustbaba.com',
             Type: 'Bike Exhaust and Silencer Trader',
             Tech: ['vuejs', 'css3', 'js'],
