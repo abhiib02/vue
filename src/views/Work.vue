@@ -93,9 +93,9 @@
             Type: 'Browser Extension',
             Tech: ['js'],
             Image: 'ytd.png',
-            Link: '#',
+            Link: 'https://microsoftedge.microsoft.com/addons/detail/hero-thumb-downloader/eionhgcppdmoemnmfgegpkdggipbfank',
             Status: 'Online',
-            Published : "Aug 2022"
+            Published : "Sep 2022"
           },
           {
             Name: 'Exhaustbaba.com',
