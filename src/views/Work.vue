@@ -238,7 +238,7 @@
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'vwt.jpg',
             Link: 'http://vwt.infinityfreeapp.com/',
-            Status: 'Online',
+            Status: 'Offline',
             Published : "Sep 2019"
           },
           
