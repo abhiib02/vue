@@ -65,22 +65,6 @@ export default {
         return {
             skills:[
                 {   
-                    techlogo:'https://img.icons8.com/color/2x/c-programming.png',
-                    tech:'C',
-                },
-                {   
-                    techlogo:'https://img.icons8.com/color/2x/c-plus-plus-logo.png',
-                    tech:'C++',
-                },
-                {   
-                    techlogo:'https://img.icons8.com/color/2x/c-sharp-logo-2.png',
-                    tech:'C#',
-                },
-                {   
-                    techlogo:'https://img.icons8.com/color/2x/java-coffee-cup-logo.png',
-                    tech:'Java',
-                },
-                {   
                     techlogo:'https://img.icons8.com/color/2x/html-5.png',
                     tech:'HTML',
                 },
@@ -89,12 +73,8 @@ export default {
                     tech:'CSS3',
                 },
                 {   
-                    techlogo:'https://pngimg.com/uploads/mysql/mysql_PNG23.png',
-                    tech:'MySQL',
-                },
-                {   
-                    techlogo:'https://www.php.net/images/logos/new-php-logo.svg',
-                    tech:'PHP',
+                    techlogo:'https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png',
+                    tech:'Sass (SCSS)',
                 },
                 {   
                     techlogo:'https://img.icons8.com/color/2x/javascript.png',
@@ -105,8 +85,24 @@ export default {
                     tech:'Jquery',
                 },
                 {   
+                    techlogo:'https://vuejs.org/images/logo.png?_sw-precache=cf23526f451784ff137f161b8fe18d5a',
+                    tech:'Vue JS',
+                },
+                {   
+                    techlogo:'https://www.php.net/images/logos/new-php-logo.svg',
+                    tech:'PHP',
+                },
+                {   
+                    techlogo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/220px-Laravel.svg.png',
+                    tech:'Laravel',
+                },
+                {   
                     techlogo:'https://cdn1.iconfinder.com/data/icons/logos-3/304/codeigniter-icon-512.png',
                     tech:'CodeIgniter',
+                },
+                {   
+                    techlogo:'https://pngimg.com/uploads/mysql/mysql_PNG23.png',
+                    tech:'MySQL',
                 },
                 {   
                     techlogo:'http://obscureproblemsandgotchas.com/wp-content/uploads/2018/06/bootstrap-stack-e1530246058846.png',
@@ -120,21 +116,19 @@ export default {
                     techlogo:'https://www.consolebit.com/media/technologies/logo-materialize.png',
                     tech:'Materialize CSS',
                 },
+                
                 {   
-                    techlogo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/220px-Laravel.svg.png',
-                    tech:'Laravel',
+                    techlogo:'https://uploads-ssl.webflow.com/613513981b0efaf850830620/630278a964d1f18269a94cd2_figma.svg',
+                    tech:'Figma',
+                },
+                
+                {   
+                    techlogo:'https://img.icons8.com/color/2x/c-programming.png',
+                    tech:'C',
                 },
                 {   
-                    techlogo:'https://vuejs.org/images/logo.png?_sw-precache=cf23526f451784ff137f161b8fe18d5a',
-                    tech:'Vue JS',
-                },
-                {   
-                    techlogo:'https://cdn.freebiesupply.com/logos/large/2x/nativescript-logo-png-transparent.png',
-                    tech:'NativeScript',
-                },
-                {   
-                    techlogo:'https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png',
-                    tech:'Sass (SCSS)',
+                    techlogo:'https://img.icons8.com/color/2x/java-coffee-cup-logo.png',
+                    tech:'Java',
                 },
                 
             ],
