@@ -237,8 +237,8 @@
             Type: 'Travel Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'vwt.jpg',
-            Link: 'https://github.com/abhiib02/Victoryworldtourism',
-            Status: 'Offline',
+            Link: 'http://vwt.epizy.com',
+            Status: 'Online',
             Published : "Sep 2019"
           },
           
