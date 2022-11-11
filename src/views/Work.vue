@@ -58,7 +58,7 @@
                 
               </div>
               <div class="pos-rb">
-                <b>{{project.Published}}</b>                
+                <b>Project Published{{project.Published}} / {{project.Info}}</b>                
               </div>
               <!-- Button -->
               <a :href="project.Link" target="_blank" class="btn btn-outline-cyan text-white btn-sm waves-effect cyan">Visit</a>
@@ -88,6 +88,16 @@
     data() {
       return {
         projects: [
+        {
+            Name: 'voyagersbeat.com',
+            Type: 'Travel Website',
+            Tech: ['html5', 'css3', 'js', 'php'],
+            Image: 'vbnov2022.png',
+            Link: 'https://voyagersbeat.com',
+            Status: 'Online',
+            Published : "Mar 2019"
+            Info: 'Currently Working'
+          },
           {
             Name: 'Youtube Thumbnail Downloader',
             Type: 'Browser Extension',
@@ -105,15 +115,6 @@
             Link: 'https://exhaustbaba.com/',
             Status: 'Online',
             Published : "Jun 2022"
-          },
-        {
-            Name: 'voyagersbeat.com',
-            Type: 'Travel Website',
-            Tech: ['html5', 'css3', 'js', 'php'],
-            Image: 'vb.png',
-            Link: 'https://voyagersbeat.com',
-            Status: 'Online',
-            Published : "Mar 2019 Redesigned 2022"
           },
           {
               Name: 'Ultra Lite Slider',
