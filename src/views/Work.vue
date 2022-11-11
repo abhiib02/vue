@@ -58,7 +58,7 @@
                 
               </div>
               <div class="pos-rb">
-                <b>Project Published{{project.Published}} / {{project.Info}}</b>                
+                <b>Project Published {{project.Published}} / {{project.Info}}</b>                
               </div>
               <!-- Button -->
               <a :href="project.Link" target="_blank" class="btn btn-outline-cyan text-white btn-sm waves-effect cyan">Visit</a>
