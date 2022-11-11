@@ -95,7 +95,7 @@
             Image: 'vbnov2022.png',
             Link: 'https://voyagersbeat.com',
             Status: 'Online',
-            Published : "Mar 2019"
+            Published : "Mar 2019",
             Info: 'Currently Working'
           },
           {
