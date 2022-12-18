@@ -11,7 +11,7 @@
    
    
     <Navigation/>
-    <div class="background"></div>
+    <canvas id="Matrix"></canvas>
     <transition name="page" mode="out-in">
     <router-view  class="animated " transition="slideInUp" />
     

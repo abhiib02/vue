@@ -89,7 +89,7 @@
       return {
         projects: [
         {
-            Name: 'voyagersbeat.com',
+            Name: 'Voyagersbeat.com',
             Type: 'Travel Website',
             Tech: ['html5', 'css3', 'js', 'php'],
             Image: 'vbnov2022.png',
