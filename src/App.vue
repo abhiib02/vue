@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
    
-    <canvas id="Matrix"></canvas>
+    
     <Navigation/>
     <transition name="page" mode="out-in">
     <router-view  class="animated " transition="slideInUp" />
