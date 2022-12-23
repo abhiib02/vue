@@ -113,7 +113,7 @@ export default {
                     tech:'Bulma.io',
                 },
                 {   
-                    techlogo:'https://www.consolebit.com/media/technologies/logo-materialize.png',
+                    techlogo:'https://materializecss.com/res/materialize.svg',
                     tech:'Materialize CSS',
                 },
                 
