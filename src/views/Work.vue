@@ -117,11 +117,11 @@
             Published : "Jun 2022"
           },
           {
-              Name: 'Ultra Lite Slider',
+              Name: 'Ultra Lite Carousal',
               Type: 'Javacript Practice (Personal Side Project)',
               Tech: ['html5', 'css3', 'js'],
               Image: 'uls.jpg',
-              Link: 'https://abhiib02.github.io/Ultra_Lite_Slider/',
+              Link: 'https://github.com/abhiib02/Ultra_Lite_Carousal',
               Status: 'Online',
               Published : "Feb 2022"
             },
